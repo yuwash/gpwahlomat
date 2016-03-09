@@ -63,3 +63,6 @@ db_repository/
 
 # virtualenv
 venv/
+
+$ config stuff
+*.cfg

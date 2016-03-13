@@ -11,4 +11,4 @@ An application to help voters see which political parties are the best fit to th
 <code>python db_create.py</code>
 5. <code>hug -f gpwahlomat/api/run.py</code>
 
-After doing this you will have a local database with the needed tables and you port 8000 will be listening for requests to the specified addresses.
+After doing this you will have a local database with the needed tables and your port 8000 will be listening for requests to the specified addresses.

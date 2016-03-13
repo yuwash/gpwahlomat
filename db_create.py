@@ -4,11 +4,11 @@
 script to create and set up the database
 '''
 
+import configparser
 from psycopg2 import connect
-import ConfigParser
 
 
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.readfp(open('config.cfg'))
 dbname = config.get('db', 'name')
 user = config.get('db', 'user')
@@ -30,42 +30,42 @@ con = connect(
 cur = con.cursor()
 cur.execute(
     '''CREATE TABLE kategorie(
-        id integer PRIMARY KEY,
-        data varchar
+        id SERIAL PRIMARY KEY,
+        data VARCHAR
     )'''
 )
 cur.execute(
     '''CREATE TABLE partei(
-        id integer PRIMARY KEY,
-        data varchar
+        id SERIAL PRIMARY KEY,
+        data VARCHAR
     )'''
 )
 cur.execute(
     '''CREATE TABLE frage(
-        id integer PRIMARY KEY,
-        data varchar,
-        kategorie_id integer references kategorie(id)
+        id SERIAL PRIMARY KEY,
+        data VARCHAR,
+        kategorie_id INTEGER REFERENCES kategorie(id)
     )'''
 )
 cur.execute(
     '''CREATE TABLE antwort(
-        id integer PRIMARY KEY,
-        data varchar,
-        frage_id integer references frage(id),
-        partei_id integer references partei(id)
+        id SERIAL PRIMARY KEY,
+        data VARCHAR,
+        frage_id INTEGER REFERENCES frage(id),
+        partei_id INTEGER REFERENCES partei(id)
     )'''
 )
 cur.execute(
     '''CREATE TABLE auswahl(
-        id integer PRIMARY KEY,
-        wahl integer,
-        frage_id integer references frage(id)
+        id SERIAL PRIMARY KEY,
+        wahl INTEGER,
+        frage_id INTEGER REFERENCES frage(id)
     )'''
 )
 cur.execute(
     '''CREATE TABLE statisch(
-        titel varchar,
-        impressum varchar
+        titel VARCHAR,
+        impressum VARCHAR
     )'''
 )
 con.commit()

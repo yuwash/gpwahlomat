@@ -66,3 +66,6 @@ venv/
 
 $ config stuff
 *.cfg
+
+# misc
+/ve

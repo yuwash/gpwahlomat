@@ -12,3 +12,4 @@ An application to help voters see which political parties are the best fit to th
 5. <code>hug -f gpwahlomat/api/run.py</code>
 
 After doing this you will have a local database with the needed tables and your port 8000 will be listening for requests to the specified addresses.
+

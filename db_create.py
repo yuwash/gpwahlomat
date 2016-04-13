@@ -70,11 +70,11 @@ cur.execute(
 )
 cur.execute(
     '''CREATE TABLE benutzer(
-        uid INTEGER PRIMARY KEY,
+        id SERIAL PRIMARY KEY,
         username VARCHAR UNIQUE,
         email VARCHAR UNIQUE,
         pwdhash VARCHAR,
-        ctime TIMESTAMP,
+        ctime TIMESTAMP default current_timestamp
     )'''
 )
 con.commit()

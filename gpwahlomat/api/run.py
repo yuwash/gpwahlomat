@@ -1,6 +1,6 @@
 import hug
 
-from db_client import database_connection
+from gpwahlomat.db.db_client import database_connection
 
 
 db = database_connection()

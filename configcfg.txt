@@ -5,4 +5,4 @@ name=wahlomat
 password=wahlomat
 user=wahlomat
 host=localhost
-port=8000
+port=5432

@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html ng-app="myApp" ng-controller="myCtrl">
+<head>
+	<meta charset="utf-8"> 
+	<title>Wahlkompass</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="scripts/module.js"></script>
+</head>
+<body>
+	<div ng-init="page_nr=0">
+	<header>
+		<img src="images/Logo.png" alt="logo">
+	</header>
+	<!-- Startseite -->
+	<div class="startbox" ng-show="page_nr == 0">
+		<div class="themebox">
+			<h2>{{tenor[0].value}}</h2>
+		</div>
+		<article>
+			<h3>{{tenor[1].value}}</h3>
+			<p>{{tenor[2].value}}</p>
+		</article>
+		<div class="buttonBox">
+			<button ng-click="page_nr=1">Start</button>
+		</div>
+	</div>
+	<!-- Umfrage -->
+	<div class="questionbox" ng-show="page_nr==1">
+		<div ng-init="question_nr = 0">
+			<div class="categorybox">
+				<h2>Kategorie: {{categories[questions[question_nr].cat_id-1].name}}</h2>
+			</div>
+			<article>
+				<h3>Frage: {{questions[question_nr].id}} von {{questions.length}}</h3>
+				<p>{{questions[question_nr].text}}</p>
+				<p>{{questions[question_nr].answer}}</p>
+			</article>
+			<div class="buttonBox">
+				<button ng-click="vote(1);forward();">Zustimmung</button>
+				<button ng-click="vote(0);forward();">Enthaltung</button>
+				<button ng-click="vote(-1);forward();">Ablehnung</button>
+				<button ng-click="back();">Zurück</button>
+				<button ng-click="forward();">Vor</button>
+			</div>
+		</div>
+	</div>
+	<!-- Favoriten -->
+	<div class="favbox" ng-show="page_nr == 2">
+		<div class="themebox">
+			<h2>{{tenor[3].value}}</h2>
+		</div>
+		<section id="favorites">
+			<ul>
+				<li ng-repeat="q in questions" ng-click="q.accent=!q.accent;" class="{{getClassFromRating(q.answer)}}">
+					<p>{{q.text}}</p><div class="accentbox"><img src="{{getFavoriteStar(q.accent);}}"></div>
+				</li>
+			</ul>
+		</section>
+		<div class="buttonBox">
+			<button ng-click="page_nr=3">Bestätigen</button>
+		</div>
+	</div>
+	<!-- Ergebniss -->
+	<div class="boxofparties" ng-show="page_nr == 3">
+		<section>
+			<ul ng-init="selectedparty=null">
+				<li ng-repeat="par in parties">
+					<p ng-click="selectedparty=par.name">{{par.name}} {{getConformity($index)}}</p>
+					<ul ng-show="selectedparty==par.name" ng-init="pindex=$index">
+						<li ng-repeat="q in questions">
+							<p>{{q.positions[pindex].orientation+" "+q.positions[pindex].argumentation+" "+q.text}}</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+</body>
+</html>

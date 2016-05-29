@@ -8,7 +8,7 @@ db = database_connection()
 cursor = db.cursor()
 
 
-@hug.get('/kategorie')
+@hug.put('/kategorie')
 def kategorie(id: hug.types.number):
     cursor.execute(
         '''SELECT * FROM kategorie WHERE id = (%s)''', (id, ))

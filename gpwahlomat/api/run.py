@@ -1,4 +1,5 @@
 import hug
+import sys
 
 from gpwahlomat.db.db_client import database_connection
 
@@ -7,7 +8,7 @@ db = database_connection()
 cursor = db.cursor()
 
 
-@hug.get('/kategorie')
+@hug.put('/kategorie')
 def kategorie(id: hug.types.number):
     cursor.execute(
         '''SELECT * FROM kategorie WHERE id = (%s)''', (id, ))
@@ -103,3 +104,17 @@ def auswahl(data: hug.types.text, kategorie_id: hug.types.number):
 def auswahlen():
     cursor.execute('''SELECT * FROM auswahl ''')
     return cursor.fetchall()
+
+
+@hug.get('/alles')
+def alles():
+    _alles = {}
+    cursor.execute('''SELECT * FROM statisch ''')
+    _alles['tenor'] = cursor.fetchall()
+    cursor.execute('''SELECT * FROM kategorie ''')
+    _alles['categories'] = cursor.fetchall()
+    cursor.execute('''SELECT * FROM partei ''')
+    _alles['parties'] = cursor.fetchall()
+    cursor.execute('''SELECT * FROM antwort ''')
+    _alles['questions'] = cursor.fetchall()
+    return _alles

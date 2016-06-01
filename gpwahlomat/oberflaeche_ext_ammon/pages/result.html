@@ -1,19 +1,27 @@
-<!-- <div class="boxofparties" ng-show="page_nr == 3">
-	<section>
-		<ul ng-init="selectedparty=null">
-			<li ng-repeat="par in parties">
-				<p ng-click="selectedparty=par.name">{{par.name}} {{getConformity($index)}}</p>
-				<ul ng-show="selectedparty==par.name" ng-init="pindex=$index">
-					<li ng-repeat="q in questions">
-						<p>{{q.positions[pindex].orientation+" "+q.positions[pindex].argumentation+" "+q.text}}</p>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</section>
-</div> -->
-<header>
-	<h2>Ausbildungs- und Kulturcentrum e.V.</h2>
-</header>
-<h1>Impressum</h1>
-<!-- {{message}} -->
+<h1>Ergebniss</h1>
+
+<article id="result">
+	<h3>Beschreibung</h3>
+	<p>
+		{{data.content_[4].value}}
+	</p>
+	<ul>
+		<li ng-repeat="p in data.parties">
+			<input type="checkbox" name="{{p.name+" "+getTotalPosition(p.id)}}" class="partytoogle" id="partytoogle{{p.id}}"/><label for="partytoogle{{p.id}}"></label>
+			<ul id="{{'party'+p.id}}" class="party toShow">
+				<li ng-repeat="q in data.questions" class="{{getRating(q.positions[p.id].orientation)}}">
+					<p class="question">
+						{{q.text}}
+					</p>
+					<p class="answer">
+						{{q.positions[p.id].argumentation}}
+					</p>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	{{party}}
+</article>
+<div class="buttonBox">
+	<a>WEITER</a>
+</div>

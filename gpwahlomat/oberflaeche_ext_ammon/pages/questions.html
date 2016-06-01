@@ -1,24 +1,24 @@
-<!-- <div class="questionbox" ng-show="page_nr==1">
-	<div ng-init="question_nr = 0">
-		<div class="categorybox">
-			<h2>Kategorie: {{categories[questions[question_nr].cat_id-1].name}}</h2>
-		</div>
-		<article>
-			<h3>Frage: {{questions[question_nr].id}} von {{questions.length}}</h3>
-			<p>{{questions[question_nr].text}}</p>
-			<p>{{questions[question_nr].answer}}</p>
-		</article>
-		<div class="buttonBox">
-			<button ng-click="vote(1);forward();">Zustimmung</button>
-			<button ng-click="vote(0);forward();">Enthaltung</button>
-			<button ng-click="vote(-1);forward();">Ablehnung</button>
-			<button ng-click="back();">Zurück</button>
-			<button ng-click="forward();">Vor</button>
-		</div>
+<h1>Befragung</h1>
+	<article>
+		<h2>Kategorie: {{data.categories[data.questions[question_nr].cat_id].name}}</h2>
+		<h3>Frage: {{data.questions[question_nr].id}} von {{data.questions.length}}</h3>
+		<p>{{data.questions[question_nr].text}}</p>
+		<p>{{data.questions[question_nr].answer}}</p>
+	</article>
+	<div class="buttonBox">
+		<a ng-click="vote(-1);forward();" class="fa fa-minus-square-o"></a>
+		<a ng-click="vote(0);forward();" class="fa fa-square-o"></a>
+		<a ng-click="vote(1);forward();" class="fa fa-plus-square-o"></a>
 	</div>
-</div> -->
-<header>
-	<h2>Ausbildungs- und Kulturcentrum e.V.</h2>
-</header>
-<h1>Impressum</h1>
-<!-- {{message}} -->
+	<div class="buttonBox">
+		<a ng-click="back();" class="fa fa-caret-square-o-left"></a>
+		<a ng-click="vote(0);forward();"  class="fa fa-caret-square-o-right"></a>
+	</div>
+	<div>
+		<p>
+			Wenn Sie jetzt fortfahren können Sie
+			ihre Antworten nichtmehr korrigieren.
+			<a href="#/favorites">Weiter</a>
+			<a ng-click="">Korrigieren</a>
+		</p>
+	</div>

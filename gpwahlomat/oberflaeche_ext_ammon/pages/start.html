@@ -1,22 +1,8 @@
-<!-- <div ng-init="page_nr=0">
-	<header>
-		<img src="images/Logo.png" alt="logo">
-	</header>
-
-	<div class="startbox" ng-show="page_nr == 0">
-		<div class="themebox">
-			<h2>{{tenor[0].value}}</h2>
-		</div>
-		<article>
-			<h3>{{tenor[1].value}}</h3>
-			<p>{{tenor[2].value}}</p>
-		</article>
-		<div class="buttonBox">
-			<button ng-click="page_nr=1">Start</button>
-		</div>
-	</div> -->
-<header>
-	<h2>Ausbildungs- und Kulturcentrum e.V.</h2>
-</header>
-<h1>Impressum</h1>
-<!-- {{message}} -->
+<h1>Startseite</h1>
+<article>
+	<h3>{{data.content_[1].value}}</h3>
+	<p>{{data.content_[2].value}}</p>
+</article>
+<div class="buttonBox">
+	<a href="#/questions">Start</a>
+</div>

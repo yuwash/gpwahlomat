@@ -1,3 +1,9 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# File name: db_client.py
+'''
+Handles the connectiong to the database
+'''
 import configparser
 import psycopg2
 

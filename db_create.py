@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+# File name: db_create.py
 '''
-script to create and set up the database
+Script to create and set up the database
 '''
-
 import configparser
 from psycopg2 import connect
 

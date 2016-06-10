@@ -105,6 +105,20 @@ main .buttonBox a:active{
 	padding: 0;
 	margin: 0;
 }
+#result button{
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	background-color: none;
+	border: none;
+	padding: 0;
+	margin: 10px 0;
+}
+#result button h1{
+	color: #55AF03;
+	background-color: #fff;
+	box-shadow: inset 0 0 0 2px #55AF03;
+}
 #result .question{
 	cursor: pointer;
 }
@@ -119,26 +133,9 @@ main .buttonBox a:active{
 }
 #result .party{
 	overflow: hidden;
-	height: 0;
-}
-#result input{
-  cursor:pointer;
-}
-
-.toShow{
-	/*animation-duration: 1s;*/
-	animation:0.5s showUp ease forwards;
-}
-@keyframes showUp {
-  0% {
-    height: 0;
-  }
-
-  100% {
-    height: 100px;
-  }
+	/*height: 0;*/
 }
 #result .answer{
 	overflow: hidden;
-	height: 0;
+	/*height: 0;*/
 }

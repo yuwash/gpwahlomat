@@ -49,15 +49,18 @@ app.controller('MainCtrl', function($scope, $http, Data, $rootScope,$routeParams
   
   $scope.question_nr = 0;
   $scope.title1 = "Startseite";
-  
+
   // load Data
   myFunction($scope, Data);
-
+  $scope.isLastQuestion = function() {
+    console.log("abcabc");
+    return false;
+  }
   $scope.forward  = function() {
     if($scope.question_nr<$scope.data.questions.length-1){
         $scope.question_nr = $scope.question_nr + 1;
     }else{
-      console.log($scope.data.questions);
+      // console.log($scope.data.questions);
       window.location.href = "#/favorites";
     }
   }

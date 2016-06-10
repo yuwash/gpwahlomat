@@ -7,8 +7,10 @@
 	</p>
 	<ul>
 		<li ng-repeat="p in data.parties">
-			<input type="checkbox" name="{{p.name+" "+getTotalPosition(p.id)}}" class="partytoogle" id="partytoogle{{p.id}}"/><label for="partytoogle{{p.id}}"></label>
-			<ul id="{{'party'+p.id}}" class="party toShow">
+			<button ng-click="setPartyVisible(p.id)">
+				<h1>{{p.name+partyVisible}} {{getTotalPosition(p.id)}}%</h1>
+			</button>
+			<ul id="{{'party'+p.id}}" class="party">
 				<li ng-repeat="q in data.questions" class="{{getRating(q.positions[p.id].orientation)}}">
 					<p class="question">
 						{{q.text}}

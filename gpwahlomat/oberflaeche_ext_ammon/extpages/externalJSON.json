@@ -1,7 +1,7 @@
 {"content_":[
 	{"id":0, "name":"thema", "value":"Thema der Befragung"},
 	{"id":1, "name":"welcome", "value":"Willkommen"},
-	{"id":2, "name":"welcometxt", "value":"Hier findet man eine kleine Beschreibung"},
+	{"id":2, "name":"welcometxt", "value":"Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher "},
 	{"id":3, "name":"accenttitle", "value":"Betonungtitel"},
 	{"id":4, "name":"resultArticle", "value":"Hier steht eine kurze Erklärung zum Ergebnis"},
 	{"id":5, "name":"favoriteArticle", "value":"Hier steht eine kurze Erklärung zu den Favoriten"}
@@ -17,7 +17,7 @@
 	{
 		"id":1,
 		"cat_id":0,
-		"text":"Fragetext nr 1 bla bla?",
+		"text":"Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei?",
 		"answer":null,
 		"accent":false,
 		"positions":[
@@ -29,7 +29,7 @@
 	{
 		"id":2,
 		"cat_id":0,
-		"text":"Fragetext nr 2 bla bla?",
+		"text":"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot ?",
 		"answer":null,
 		"accent":false,
 		"positions":[
@@ -41,7 +41,7 @@
 	{
 		"id":3,
 		"cat_id":0,
-		"text":"Fragetext nr 3 bla bla?",
+		"text":"Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei?",
 		"answer":null,
 		"accent":false,
 		"positions":[
@@ -53,7 +53,7 @@
 	{
 		"id":4,
 		"cat_id":1,
-		"text":"Fragetext nr 4 bla bla?",
+		"text":"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot ?",
 		"answer":null,
 		"accent":false,
 		"positions":[
@@ -65,7 +65,7 @@
 	{
 		"id":5,
 		"cat_id":1,
-		"text":"Fragetext nr 5 bla bla?",
+		"text":"Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei??",
 		"answer":null,
 		"accent":false,
 		"positions":[

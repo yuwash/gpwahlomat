@@ -14,7 +14,7 @@
 		<a ng-click="back();" class="fa fa-caret-square-o-left"></a>
 		<a ng-click="vote(0);forward();"  class="fa fa-caret-square-o-right"></a>
 	</div>
-	<div>
+	<div class="confirmation screen" ng-show="isLastQuestion();">
 		<p>
 			Wenn Sie jetzt fortfahren können Sie
 			ihre Antworten nichtmehr korrigieren.

@@ -1,12 +1,16 @@
-#!venv/bin/python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# File name: run.py
+'''
+Main file that gets run and handles the routing to index and api calls
+'''
 from flask import Flask, request, render_template, jsonify
+
 from api.generic_api_handler import GenericAPIHandler
 from api.tools import get_everything
 
 
-app = Flask(
-    __name__, template_folder='oberflaeche_ext_ammon/',
-    static_url_path='/oberflaeche_ext_ammon/')
+app = Flask(__name__, template_folder='static/')
 
 
 @app.route('/')

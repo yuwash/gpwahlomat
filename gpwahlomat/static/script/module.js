@@ -4,16 +4,16 @@ var app = angular.module('myApp', ['ngRoute']);
 app.config(function($routeProvider) {
   $routeProvider
   .when('/', {
-    templateUrl : 'pages/start.html'
+    templateUrl : 'static/pages/start.html'
   })
   .when('/result', {
-    templateUrl : 'pages/result.html'
+    templateUrl : 'static/pages/result.html'
   })
   .when('/questions', {
-    templateUrl : 'pages/questions.html'
+    templateUrl : 'static/pages/questions.html'
   })
   .when('/favorites', {
-    templateUrl : 'pages/favorites.html'
+    templateUrl : 'static/pages/favorites.html'
   })
   .otherwise({redirectTo: '/'});
 });
@@ -23,7 +23,7 @@ app.config(function($routeProvider) {
 angular.module('myApp').factory('Data', function($http,$routeParams){
   
   var getData = function(){
-    return $http({method:"GET", url:"extpages/externalJSON.json"})
+    return $http({method:"GET", url:"static/extpages/externalJSON.json"})
     .then(function(extern) {
       return extern.data;
     });

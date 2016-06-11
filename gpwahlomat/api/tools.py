@@ -1,5 +1,9 @@
-#!venv/bin/python
-
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# File name: tools.py
+'''
+A collection of tools used in other modules
+'''
 from db.db_client import database_connection
 
 

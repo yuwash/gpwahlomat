@@ -1,10 +1,19 @@
-#!venv/bin/python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# File name: generic_api_handler.py
+'''
+An API handler that handles with the common REST functions.
+# get
+# put
+# post
+# delete
+This is instanciated every time a request to one of the api routes is made.
+'''
+from flask import jsonify, request, render_template
 
-from flask import Flask, jsonify, request, render_template
 from db.db_client import database_connection
 
 
-app = Flask(__name__, template_folder='oberflaeche_int/public')
 db = database_connection()
 cursor = db.cursor()
 

@@ -22,10 +22,11 @@ class GenericAPIHandler(object):
     def __init__(self):
         super(GenericAPIHandler).__init__()
         if not request.form:
-            return render_template('index2.html')
-        self.path = request.path
+            return render_template('index.html')
+        self.path = request.path[1:]
         self.json = request.form
         self.id = self.json.get('id', None)
+        self.data = self.json.get('data', None)
 
     def get(self):
         if self.id:
@@ -53,15 +54,16 @@ class GenericAPIHandler(object):
             return 'OK'
 
     def post(self):
-        if self.id:
-            cursor.execute(
-                '''SELECT * FROM {table} WHERE id = (%s)'''.format(
-                    table=self.path, id=self.id))
-            return jsonify(cursor.fetchone())
-        else:
-            cursor.execute('''SELECT * FROM {table} '''.format(
-                table=self.path))
-            return jsonify(cursor.fetchall())
+        cols = self.json.keys()
+        cols_str = ", ".join([i for i in self.json.keys()])
+        vals = [self.json[x] for x in cols]
+        vals_str_list = ','.join(["%s"] * len(vals))
+        insert_query = (
+            ''' INSERT INTO {table} ({cols})
+                VALUES ({vals_str})'''.format(
+                table=self.path, cols=cols_str, vals_str=vals_str_list))
+        cursor.execute(insert_query, tuple(vals))
+        return 'OK'
 
     def delete(self):
         if self.id:

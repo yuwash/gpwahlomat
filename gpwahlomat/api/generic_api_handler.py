@@ -9,7 +9,7 @@ An API handler that handles with the common REST functions.
 # delete
 This is instanciated every time a request to one of the api routes is made.
 '''
-from flask import jsonify, request, render_template
+from flask import jsonify, request
 
 from db.db_client import database_connection
 
@@ -21,8 +21,6 @@ cursor = db.cursor()
 class GenericAPIHandler(object):
     def __init__(self):
         super(GenericAPIHandler).__init__()
-        if not request.form:
-            return render_template('index.html')
         self.path = request.path[1:]
         self.json = request.form
         self.id = self.json.get('id', None)

@@ -20,8 +20,8 @@ con = connect(
     dbname='postgres', user=user, host=host, password=password)
 con.autocommit = True
 cur = con.cursor()
-cur.execute('DROP DATABASE ' + dbname)
-cur.execute('CREATE DATABASE ' + dbname)
+#cur.execute('DROP DATABASE ' + dbname)
+#cur.execute('CREATE DATABASE ' + dbname)
 cur.close()
 
 # connect to wahlomat db and create the necessary tables

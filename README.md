@@ -19,7 +19,7 @@ After doing this you will have a local database with the needed tables and the a
 1. install Python3 for windows
 2. install PostgreSQL from http://www.bigsql.org/postgresql/installers.jsp
 3. Clone repo
-4. <code>cd to repo folder</code>
+4. <code>cd to repo_folder</code>
 5. run <code>pip install virtualenv</code> as admin
 6. <code>cd repo folder</code> and <code>virtualenv venv</code>
 7. change in virtual environment ```call venv\Scripts\activate.bat```

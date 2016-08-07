@@ -21,7 +21,7 @@ After doing this you will have a local database with the needed tables and the a
 3. Clone repo
 4. <code>cd to repo folder</code>
 5. run <code>pip install virtualenv</code> as admin
-6. <code>cd my_project_folder</code> and <code>virtualenv venv</code>
+6. <code>cd repo folder</code> and <code>virtualenv venv</code>
 7. change in virtual environment ```call venv\Scripts\activate.bat```
 8. Rename configcfg.txt to config.cfg and edit the contents.
 9. to db create run follow commands in PSQL Commandline

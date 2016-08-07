@@ -22,8 +22,8 @@ After doing this you will have a local database with the needed tables and the a
 4. <code>cd to repo folder</code>
 5. run <code>pip install virtualenv</code> as admin
 6. change in virtual environment ```call venv\Scripts\activate.bat```
-7. do 4. from above
-8. for 5. run follow commands in PSQL Commandline
+7. Rename configcfg.txt to config.cfg and edit the contents.
+8. to db create run follow commands in PSQL Commandline
 8. create a user run ```CREATE USER wahlomat WITH Password 'wahlomat';```
 9. create a DB with owner wahlomat run ```CREATE DATABASE wahlomat OWNER wahlomat;```
 10. then run this <code>python db_create.py</code>

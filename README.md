@@ -8,9 +8,12 @@ An application to help voters see which political parties are the best fit to th
 2. <code>cd to repo folder</code>
 3. <code>pip install -r requirements.txt</code>
 4. Rename configcfg.txt to config.cfg and edit the contents.
-5. You will need a local postgresql install and to have a user named wahlomat, then run this:
+5. to db create run follow commands in PSQL Commandline
+6. create a user run CREATE USER wahlomat WITH Password 'wahlomat';
+7. create a DB with owner wahlomat run CREATE DATABASE wahlomat OWNER wahlomat;
+8. You will need a local postgresql install and to have a user named wahlomat, then run this:
 <code>python db_create.py</code>
-6. <code>python gpwahlomat/run.py</code>
+9. <code>python gpwahlomat/run.py</code>
 
 After doing this you will have a local database with the needed tables and the app can be reached at port 5000.
 

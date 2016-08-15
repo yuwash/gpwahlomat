@@ -5,7 +5,8 @@
 Script to create and set up the database
 '''
 import configparser
-from psycopg2 import connect
+from psycopg2 import connect, ProgrammingError
+import json
 
 
 config = configparser.ConfigParser()
@@ -20,62 +21,119 @@ con = connect(
     dbname='postgres', user=user, host=host, password=password)
 con.autocommit = True
 cur = con.cursor()
-#cur.execute('DROP DATABASE ' + dbname)
-#cur.execute('CREATE DATABASE ' + dbname)
+try:
+    cur.execute('DROP DATABASE ' + dbname)
+except ProgrammingError:
+    pass
+cur.execute('CREATE DATABASE ' + dbname)
 cur.close()
 
 # connect to wahlomat db and create the necessary tables
 con = connect(
     dbname=dbname, user=user, host=host, password=password)
 cur = con.cursor()
-cur.execute(
-    '''CREATE TABLE kategorie(
-        id SERIAL PRIMARY KEY,
-        data VARCHAR
-    )'''
-)
-cur.execute(
-    '''CREATE TABLE partei(
-        id SERIAL PRIMARY KEY,
-        data VARCHAR
-    )'''
-)
-cur.execute(
-    '''CREATE TABLE frage(
-        id SERIAL PRIMARY KEY,
-        data VARCHAR,
-        kategorie_id INTEGER REFERENCES kategorie(id)
-    )'''
-)
-cur.execute(
-    '''CREATE TABLE antwort(
-        id SERIAL PRIMARY KEY,
-        data VARCHAR,
-        frage_id INTEGER REFERENCES frage(id),
-        partei_id INTEGER REFERENCES partei(id)
-    )'''
-)
-cur.execute(
-    '''CREATE TABLE auswahl(
-        id SERIAL PRIMARY KEY,
-        wahl INTEGER,
-        frage_id INTEGER REFERENCES frage(id)
-    )'''
-)
-cur.execute(
-    '''CREATE TABLE statisch(
-        titel VARCHAR,
-        impressum VARCHAR
-    )'''
-)
-cur.execute(
-    '''CREATE TABLE benutzer(
-        id SERIAL PRIMARY KEY,
-        username VARCHAR UNIQUE,
-        email VARCHAR UNIQUE,
-        pwdhash VARCHAR,
-        ctime TIMESTAMP default current_timestamp
-    )'''
-)
-con.commit()
+
+
+def create_schema():
+    cur.execute(
+        '''CREATE TABLE kategorie(
+            id SERIAL PRIMARY KEY,
+            data VARCHAR UNIQUE
+        )'''
+    )
+    cur.execute(
+        '''CREATE TABLE partei(
+            id SERIAL PRIMARY KEY,
+            data VARCHAR
+        )'''
+    )
+    cur.execute(
+        '''CREATE TABLE frage(
+            id SERIAL PRIMARY KEY,
+            data VARCHAR,
+            kategorie_id INTEGER REFERENCES kategorie(id)
+        )'''
+    )
+    cur.execute(
+        '''CREATE TABLE antwort(
+            id SERIAL PRIMARY KEY,
+            data VARCHAR,
+            wahl INTEGER,
+            frage_id INTEGER REFERENCES frage(id),
+            partei_id INTEGER REFERENCES partei(id)
+        )'''
+    )
+    cur.execute(
+        '''CREATE TABLE auswahl(
+            id SERIAL PRIMARY KEY,
+            wahl INTEGER,
+            frage_id INTEGER REFERENCES frage(id)
+        )'''
+    )
+    cur.execute(
+        '''CREATE TABLE statisch(
+            titel VARCHAR,
+            impressum VARCHAR
+        )'''
+    )
+    cur.execute(
+        '''CREATE TABLE benutzer(
+            id SERIAL PRIMARY KEY,
+            username VARCHAR UNIQUE,
+            email VARCHAR UNIQUE,
+            pwdhash VARCHAR,
+            ctime TIMESTAMP default current_timestamp
+        )'''
+    )
+    con.commit()
+
+
+def fill_data(json_file):
+    with open(json_file) as data_file:
+        questions = json.load(data_file)
+        for question in questions:
+            print(question)
+            print(type(question))
+            for q_text in question:
+                cur.execute(
+                    '''SELECT id FROM kategorie
+                        WHERE data = (%s)
+                    ''', (question[q_text]['kategorie'], )
+                )
+                if not cur.fetchone():
+                    cur.execute(
+                        '''INSERT INTO kategorie (data)
+                            VALUES (%s) RETURNING id
+                        ''', (question[q_text]['kategorie'], )
+                    )
+                kat_id = cur.fetchone()[0]
+                cur.execute(
+                    '''INSERT INTO frage (data, kategorie_id)
+                        VALUES (%s, %s) RETURNING id
+                    ''', (q_text, kat_id, )
+                )
+                q_id = cur.fetchone()[0]
+                for partei in question[q_text]['parteien']:
+                    cur.execute(
+                        '''SELECT id FROM partei
+                            WHERE data = (%s)
+                        ''', (partei['name'], ))
+                    if not cur.fetchone():
+                        print(partei['name'])
+                        cur.execute(
+                            '''INSERT INTO partei (data)
+                                VALUES (%s) RETURNING id
+                            ''', (partei['name'], )
+                        )
+                    party_id = cur.fetchone()[0]
+                    cur.execute(
+                        '''INSERT INTO antwort (data, wahl, frage_id, partei_id)
+                            VALUES (%s, %s, %s, %s)
+                        ''', (partei['antwort'],
+                        partei['wahl'], q_id, party_id, ))
+
+
+create_schema()
+fill_data('data.json')
 cur.close()
+

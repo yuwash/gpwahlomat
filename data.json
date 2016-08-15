@@ -1,0 +1,29 @@
+[{
+  "Soll Berlin in der gemeinsamen Landesplanung auf einen Stopp der geplanten Tagebaue in Brandenburg hinarbeiten?":
+    {
+      "kategorie": "Umwelt",
+      "parteien": [
+        {
+          "name": "CDU",
+          "antwort": "dummy",
+          "wahl": 1
+        }, {
+          "name": "CDU",
+          "antwort": "dummy",
+          "wahl": 1
+        }, {
+          "name": "CDU",
+	  "antwort": "dummy",
+	  "wahl": 1
+        }, {
+	  "name": "CDU",
+	  "antwort": "dummy",
+	  "wahl": 1
+        }, {
+	  "name": "CDU",
+	  "antwort": "dummy",
+	  "wahl": 1
+        }
+      ]
+  }
+}]

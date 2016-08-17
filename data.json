@@ -1,29 +1,218 @@
 [{
   "Soll Berlin in der gemeinsamen Landesplanung auf einen Stopp der geplanten Tagebaue in Brandenburg hinarbeiten?":
     {
-      "kategorie": "Umwelt",
+      "kategorie": "Energie & Klimawandel",
       "parteien": [
         {
           "name": "CDU",
-          "antwort": "dummy",
+          "antwort": "Wir streben einen Ausstieg aus der Kohleversorgung für das Jahr 2030 an. Der Dialog mit Brandenburg nimmt dabei eine wichtige Rolle ein. Die strukturellen Heraus-forderungen für Regionen, die hauptsächlich von der Braunkohle leben, sind erheblich und sollten auch bei der Umsetzung der Berliner Ziele nicht zu übergangen werden.",
+          "wahl": 0
+        }, {
+          "name": "BÜNDNIS 90/DIE GRÜNEN",
+          "antwort": "Ja, auf jeden Fall. Wir haben dazu bereits viele parlamentarische Initiativen initiiert bzw. umgesetzt, Gutachten unterstützt und arbeiten auch eng mit Initiativen in Berlin und Brandenburg sowie den Brandenburger Grünen zusammen.",
           "wahl": 1
         }, {
-          "name": "CDU",
-          "antwort": "dummy",
+          "name": "Die Linke",
+          "antwort": "Ja, die geplanten Tagebaue sind aus Gründen des Klimaschutzes des Gewässer- und des Trinkwasserschutzes nicht zu rechtfertigen. Die Gewinnung und Nutzung der Braunkohleressourcen ist als Grundsatz aus dem gemeinsamen Landesentwicklungsplan zu streichen.",
           "wahl": 1
         }, {
-          "name": "CDU",
-	  "antwort": "dummy",
-	  "wahl": 1
+          "name": "Piraten",
+          "antwort": "Ja. Selbstverständlich. Als Opposition im Abgeordnetenhaus drängen wir seit Jahren darauf.",
+          "wahl": 1
         }, {
-	  "name": "CDU",
-	  "antwort": "dummy",
-	  "wahl": 1
-        }, {
-	  "name": "CDU",
-	  "antwort": "dummy",
-	  "wahl": 1
+          "name": "SPD",
+          "antwort": "Ja. Wir befürworten einen Kohleausstieg auch in Brandenburg und setzen uns sowohl im politischen Dialog mit den Verantwortlichen im Land Brandenburg als auch im Rahmen der gemeinsamen Landesplanung für die Umsetzung dieses Ziels ein.",
+          "wahl": 1
         }
       ]
-  }
+    },
+  "Sehen Sie die Sulfatbelastung durch die Lausitzer Braunkohletagebaue als Gefahr für die Berliner Wasserversorgung?":
+    {
+      "kategorie": "Energie & Klimawandel",
+      "parteien": [
+        {
+          "name": "CDU",
+          "antwort": "Aktuell lässt das Land Brandenburg eine eigene Sulfatprognose erstellen. Die Ergebnisse dieser Studie sollen im Sommer präsentiert werden. Diese Ergebnisse gilt es abzuwarten und anschließend zu bewerten.",
+          "wahl": 0
+        }, {
+          "name": "BÜNDNIS 90/DIE GRÜNEN",
+          "antwort": "Ja. Das ist eine „tickende Zeitbombe“ für die Berliner Wasserversorgung wie auch anderer Kommunen. Wir unterstützen das Netzwerk gegen die Sulfatgefahren. Wir wollen, dass an der Quelle durch die Bergbaubetreiber diei Belastung eingedämmt bzw. beseitigt wird.",
+          "wahl": 1
+        }, {
+          "name": "Die Linke",
+          "antwort": "Die Lausitzer Tagebaue sind wesentlich verantwortlich für den Anstieg der Sulfatkonzentration im Müggelsee und dem dort gewonnenen Trinkwasser. In Abstimmung mit Brandenburg und Sachsen sowie dem Bund müssen daher die Sulfatbelastung der Spree reduziert und neue Tagebaue verhindert werden.",
+          "wahl": 1
+        }, {
+          "name": "Piraten",
+          "antwort": "Ja. Die hohen Werte, die zuletzt durch Messungen innerhalb einer Studie des Leibniz-Instituts für Gewässerökologie und Binnenfischerei (IGB) durchgeführt wurden, sind besorgniserregend und müssen zu einer Intensivierung politischen Handelns über die Landesplanungskonferenz mit Brandenburg führen.",
+          "wahl": 1
+        }, {
+          "name": "SPD",
+          "antwort": "Aktuell besteht nach unseren Informationen keine Gefahr für das Berliner Trinkwasser. Die SPD legt jedoch Wert darauf, dass eine nachhaltige Sanierung vor Ort erfolgt, die auch künftig eine Gefährdung der Berliner Wasserversorgung durch Sulfate und andere Fremdstoffe ausschließt.",
+          "wahl": -1
+        }
+      ]
+    },
+  "Befürworten Sie ein Abschalten des Braunkohlekraftwerks Klingenberg bis 2020 und der Berliner Steinkohlekraftwerke bis 2025?":
+    {
+      "kategorie": "Energie & Klimawandel",
+      "parteien": [
+        {
+          "name": "CDU",
+          "antwort": "Fossile Energieträger sind günstige und leistungsstarke Energiequellen. Sie werden noch einige Jahre die erforderliche Sicherheit garantieren, um die Umstellung auf erneuerbare Energien umsetzen zu können. Wir streben einen Ausstieg aus der Braunkohle bis zum Jahr 2020 und einen Ausstiegi aus der Steinkohle bis zum Jahr 2030 an.",
+          "wahl": 0
+        }, {
+          "name": "BÜNDNIS 90/DIE GRÜNEN",
+          "antwort": "Ja. Wir fordern, dass die bestehende Braun- und Steinkohleverstromung in Berlin an den Standorten Reuter C und Klingenberg spätestens im Jahr 2020 beendet wird sowie einen kompletten Ausstieg aus der Kohleverstromung und -wärmegewinnung in Berlini bis spätestens 2030.",
+          "wahl": 1
+        }, {
+          "name": "Die Linke",
+          "antwort": "Ja, zur Erreichung der Klimaschutzziele sind die Kohlekraftwerke Berlins schnellstmöglich stillzulegen, im Fall der Steinkohle nach Möglichkeit bis 2025, spätestens aber bis 2030. Um die Wärmeversorgung sicherzustellen sindi entsprechende Ersatzinvestitionen zu tätigen.",
+          "wahl": 1
+        }, {
+          "name": "Piraten",
+          "antwort": "Ja.",
+          "wahl": 1
+        }, {
+          "name": "SPD",
+          "antwort": "Ja. Die SPD setzt sich für einen schnellstmöglichen Ausstieg aus der Braun- und Steinkohleförderung und diesbezüglichen Kraftwerksnutzung ein.",
+          "wahl": 1
+        }
+      ]
+    },
+  "Sind Sie für den Bezug von 100 % Ökostrom durch die öffentliche Hand bis 2020?":
+    {
+      "kategorie": "Energie & Klimawandel",
+      "parteien": [
+        {
+          "name": "CDU",
+          "antwort": "Wir unterstützen die Energiewende und wollen eine langfristig sichere, umweltverträgliche und bezahlbare Energieversorgung, die uns unabhängiger von fossilen Energieträgern macht. Allerdings können wir diesen Prozess vorerst nicht ohne die Mithilfe der fossilen Energieträger bewältigen.",
+          "wahl": 0
+        }, {
+          "name": "BÜNDNIS 90/DIE GRÜNEN",
+          "antwort": "Ja. Wir haben durch parlamentarische Initiativen erreicht, dass die Berliner Beschaffungsstellen größere Anteile von Ökostrom beziehen. Wir wollen die Mindestvorgaben von 20% verschärfen und den Bezug von Ökostrom durch ein starkes Klimastadtwerk signifikant erhöhen.",
+          "wahl": 1
+        }, {
+          "name": "Die Linke",
+          "antwort": "Ja. Allerdings soll der Strombezug auch tatsächlich zum Ausbau Erneuerbarer Energien beitragen. Die Ausschreibung kann sich hierzu an den Empfehlungen des Umweltbundesamtes orientieren. Ein begrenzter Anteil von Strom aus gasbefeuerten, hocheffizienten KWK-Anlagen sollte möglich sein.",
+          "wahl": 1
+        }, {
+          "name": "Piraten",
+          "antwort": "Ja.",
+          "wahl": 1
+        }, {
+          "name": "SPD",
+          "antwort": "Ja. Wir setzen uns für eine deutliche Erhöhung des Anteils von Ökostrom in der öffentlichen Verwaltung ein, jedoch wird das Ziel eines 100-prozentigen Ökostrombezuges bis zum Jahr 2020 noch nicht zu erreichen sein.",
+          "wahl": 1
+        }
+      ]
+    },
+  "Unterstützen Sie das Vorhaben, die Berliner Gebäude der öffentlichen Hand mit Photovoltaikanlagen auszustatten?":
+    {
+      "kategorie": "Energie & Klimawandel",
+      "parteien": [
+        {
+          "name": "CDU",
+          "antwort": "Wir wollen die energetische Sanierung von Gebäuden vorantreiben. Die öffentliche Hand muss mit gutem Beispiel voran gehen: Die Sanierung landeseigener Gebäude und die Versorgung mit Ökostrom sind dabei ein wichtiger Bestandteil.",
+          "wahl": 0
+        }, {
+          "name": "BÜNDNIS 90/DIE GRÜNEN",
+          "antwort": "Ja, das entspricht auch den von allen Parteien getragenen Empfehlungen der Enquete-Kommission „Neue Energie für Berlin“ - u.a. werden wir die entsprechenden Aktivitäten des Klimastadtwerks forcieren und die Umsetzung eines „Masterplans Solarhauptstadt“ unter- stützen.",
+          "wahl": 1
+        }, {
+          "name": "Die Linke",
+          "antwort": "Ja. Das Land und die Bezirke sollten bei der Installation von Solaranlagen eine Vorreiterrolle einnehmen um endlich das Potential für Photovoltaik und Solarthermie in Berlin zu nutzen. Auf allen geeigneten öffentlichen Gebäuden sollen Solaranlagen installiert werden.",
+          "wahl": 1
+        }, {
+          "name": "Piraten",
+          "antwort": "Ja.",
+          "wahl": 1
+        }, {
+          "name": "SPD",
+          "antwort": "Ja, wir unterstützen das Ziel, die Berliner Gebäude der öffentlichen Hand mit Photovoltaikanlagen auszustatten.",
+          "wahl": 1
+        }
+      ]
+    },
+  "Soll Berlin in der nächsten Legislaturperiode seine Klimaschutzstrategie an das 1,5-Grad-Ziel anpassen?":
+    {
+      "kategorie": "Energie & Klimawandel",
+      "parteien": [
+        {
+          "name": "CDU",
+          "antwort": "Wir können und müssen unsere CO2-Emissionen senken – mit dem kommenden Energiewendegesetz, dem dazu gehörenden Berliner Energie- und Klimaschutzprogramm und der Enquete-Kommission „Neue Energie für Berlin“ hat Berlin bereits ehrgeizige Ziele formuliert sowie die ersten notwendigen Schritte gemacht.",
+          "wahl": 0
+        }, {
+          "name": "BÜNDNIS 90/DIE GRÜNEN",
+          "antwort": "Oberstes Ziel ist die Erreichung von Klimaneutralität und die Umsetzung einer ambitionierten Energiewende in Berlin. Dies wird zusammen mit der Erweiterung des Berliner Energie- und Klimaschutzprogramms in der nächsten Legislatur ein Schwerpunkt unserer Arbeit sein.",
+          "wahl": 1
+        }, {
+          "name": "Die Linke",
+          "antwort": "DIE LINKE will die Anpassung der Klimaschutzziele und der Strategie an das 1,5-Grad-Ziel von Paris. Sollen die Pariser Klimaziele erreicht werden, dürfen die Beschlüsse nicht nur eine Absichtserklärung bleiben, sondern müssen auch in Maßnahmen umgesetzt werden.",
+          "wahl": 1
+        }, {
+          "name": "Piraten",
+          "antwort": "Ja. Die momentanen Bestrebungen für den Klimaschutz reichen nicht aus.",
+          "wahl": 1
+        }, {
+          "name": "SPD",
+          "antwort": "Die SPD setzt sich dafür ein, dass das Land Berlin zur „Divestment-Hauptstadt“ der Welt wird. Ziel soll sein, Anlagen aus Unternehmen, deren Geschäftsmodell dem Ziel der Klimaneutralität widersprechen, innerhalb der nächsten fünf Jahre abzuziehen und diese Investitionen in Zukunft durch Anlagerichtlinien auszuschließen.",
+          "wahl": 0
+        }
+      ]
+    },
+  "Sind Sie für einen verpflichtenden Ausbau von Erneuerbaren Energien für die Wärmeversorgung in Bestandsgebäuden?":
+    {
+      "kategorie": "Energie & Klimawandel",
+      "parteien": [
+        {
+          "name": "CDU",
+          "antwort": "Entscheidend für das Gelingen der Energiewende bei der Wärmeversorgung ist die energetische Sanierung des Gebäudebestandes. Auch in Berlin besteht weiterer Handlungsbedarf zur Erhöhung der Energieeffizienz im Gebäudebestand.",
+          "wahl": 0
+        }, {
+          "name": "BÜNDNIS 90/DIE GRÜNEN",
+          "antwort": "Ja. Wir werden für ein Wärmegesetz kämpfen, das klare Vorgaben für die Einsparung von Wärmeenergie im Gebäudebestand, den Ausbau erneuerbarer Wärme sowie die Regulierung der Fernwärmenetze macht. Dabei sind die besonderen sozialen Bedingungen Berlins zu berücksichtigen.",
+          "wahl": 1
+        }, {
+          "name": "Die Linke",
+          "antwort": "Wir sind für klare gesetzliche Vorgaben für den Ausbau Erneuerbarer Energien und für die Einsparung von Wärmeenergie im Berliner Gebäudebestand. Als Ersatzmaßnahme sollte die Erstellung qualifizierter Sanierungsfahrpläne angerechnet werden.",
+          "wahl": 0
+        }, {
+          "name": "Piraten",
+          "antwort": "Ja.",
+          "wahl": 1
+        }, {
+          "name": "SPD",
+          "antwort": "Ja. Die SPD verfolgt das Ziel, Berlin bis zum Jahr 2050 zu einer klimaneutralen Stadt zu entwickeln. Hierfür wurden bereits strategische Prinzipien und Handlungsfelder im Rahmen des Berliner Energie- und Klimaschutzprogramms erarbeitet.",
+          "wahl": 1
+        }
+      ]
+    },
+  "Sind Sie für die Rekommunalisierung des Berliner Stromnetzes?":
+    {
+      "kategorie": "Energie & Klimawandel",
+      "parteien": [
+        {
+          "name": "CDU",
+          "antwort": "Wir vertreten die Position, dass vor einer möglichen Rekommunalisierungsentscheidung konkrete ökologische, wirtschaftliche, soziale und demokratiepolitische Ziele eindeutig zu definieren sind. Sowohl mit Blick auf den Kaufpreis, die Unternehmensstruktur als auch die Zielsetzung des Landes.",
+          "wahl": 0
+        }, {
+          "name": "BÜNDNIS 90/DIE GRÜNEN",
+          "antwort": "Ja. Dazu soll das Stromnetz vom Land Berlin zusammen mit der Genossenschaft BürgerEnergie Berlin übernommen werden. Wenn es im laufenden Verfahren oder nach möglichem Abbruch dazu in der neuen Legislaturperiode Spielräume gibt, werden wir diese nutzen.",
+          "wahl": 1
+        }, {
+          "name": "Die Linke",
+          "antwort": "Ja. Während für private Netzbetreiber das Erzielen einer höchstmöglichen Rendite im Vordergrund steht, ermöglichen rekommunalisierte Energienetze die Ausrichtung der Geschäftspolitik an den energie-, wirtschafts-, sozial- und demokratiepolitischen Zielen des Landes.",
+          "wahl": 1
+        }, {
+          "name": "Piraten",
+          "antwort": "Ja.",
+          "wahl": 1
+        }, {
+          "name": "SPD",
+          "antwort": "Energie darf kein Luxus und Spekulationsobjekt sein. Wir wollen, dass die Berlinerinnen und Berliner Zugang zu sauberer, verlässlicher und bezahlbarer Energie haben. Nach den Wasserbetrieben wollen wir auch das Strom- und das Gasnetz sowie die Fernwärmenetze rekommunalisieren.",
+          "wahl": 1
+        }
+      ]
+    }
 }]

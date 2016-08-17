@@ -19,6 +19,6 @@ def get_everything():
     alles['categories'] = cursor.fetchall()
     cursor.execute('''SELECT * FROM partei ''')
     alles['parties'] = cursor.fetchall()
-    cursor.execute('''SELECT * FROM antwort ''')
+    cursor.execute('''SELECT * FROM frage ''')
     alles['questions'] = cursor.fetchall()
     return alles

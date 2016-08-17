@@ -92,25 +92,25 @@ def fill_data(json_file):
     with open(json_file) as data_file:
         questions = json.load(data_file)
         for question in questions:
-            print(question)
-            print(type(question))
             for q_text in question:
                 cur.execute(
                     '''SELECT id FROM kategorie
                         WHERE data = (%s)
                     ''', (question[q_text]['kategorie'], )
                 )
-                if not cur.fetchone():
+                cat = cur.fetchone()
+                if not cat:
                     cur.execute(
                         '''INSERT INTO kategorie (data)
                             VALUES (%s) RETURNING id
                         ''', (question[q_text]['kategorie'], )
                     )
-                kat_id = cur.fetchone()[0]
+                    cat = cur.fetchone()
+                cat_id = cat[0]
                 cur.execute(
                     '''INSERT INTO frage (data, kategorie_id)
                         VALUES (%s, %s) RETURNING id
-                    ''', (q_text, kat_id, )
+                    ''', (q_text, cat_id, )
                 )
                 q_id = cur.fetchone()[0]
                 for partei in question[q_text]['parteien']:
@@ -118,14 +118,15 @@ def fill_data(json_file):
                         '''SELECT id FROM partei
                             WHERE data = (%s)
                         ''', (partei['name'], ))
-                    if not cur.fetchone():
-                        print(partei['name'])
+                    party = cur.fetchone()
+                    if not party:
                         cur.execute(
                             '''INSERT INTO partei (data)
                                 VALUES (%s) RETURNING id
                             ''', (partei['name'], )
                         )
-                    party_id = cur.fetchone()[0]
+                        party = cur.fetchone()
+                    party_id = party[0]
                     cur.execute(
                         '''INSERT INTO antwort (data, wahl, frage_id, partei_id)
                             VALUES (%s, %s, %s, %s)

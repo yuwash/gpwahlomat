@@ -26,6 +26,23 @@ def get_everything():
     cursor.execute(
         '''SELECT frage.id, frage.data, frage.kategorie_id,
             antwort.data, antwort.wahl FROM frage, antwort''')
-    alles['questions'] = flatten(cursor.fetchall())
-    print(alles)
+    questions = cursor.fetchall()
+    q_dict = {}
+    q_list = []
+    for question in questions:
+        if question[1] in q_dict:
+            q_dict[question[1]]['positions'].append({
+                'orientation':question[4], 'argumentation': question[3]})
+        else:
+            q_dict[question[1]] = {
+                'id': question[0],
+                'cat_id': question[2],
+                'positions': [
+                    {'orientation': question[4], 'argumentation': question[3]}]
+            }
+    for key in q_dict:
+        new_dict = q_dict[key]
+        new_dict['text'] = key
+        q_list.append(new_dict)
+    alles['questions'] = q_list
     return alles

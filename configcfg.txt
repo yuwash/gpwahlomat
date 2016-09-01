@@ -1,8 +1,0 @@
-# change the filename from configcfg.txt to config.cfg
-
-[db]
-name=wahlomat
-password=wahlomat
-user=wahlomat
-host=localhost
-port=5432

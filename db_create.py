@@ -132,7 +132,7 @@ def fill_data(json_file):
                             VALUES (%s, %s, %s, %s)
                         ''', (partei['antwort'],
                         partei['wahl'], q_id, party_id, ))
-
+        con.commit()
 
 create_schema()
 fill_data('data.json')

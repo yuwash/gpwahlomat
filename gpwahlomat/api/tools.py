@@ -24,6 +24,7 @@ def get_everything():
     cursor.execute('''SELECT data FROM partei ''')
     alles['parties'] = flatten(cursor.fetchall())
     alles['questions'] = get_questions()
+    return alles
 
 
 def get_questions():
@@ -49,4 +50,3 @@ def get_questions():
         new_dict['text'] = key
         q_list.append(new_dict)
     return q_list
-

@@ -72,8 +72,13 @@ def create_schema():
     )
     cur.execute(
         '''CREATE TABLE statisch(
-            titel VARCHAR,
-            impressum VARCHAR
+            thema VARCHAR,
+            welcome VARCHAR,
+            welcometxt VARCHAR,
+            accenttitle VARCHAR,
+            resultArticle VARCHAR,
+            favoriteArticle VARCHAR,
+            neutralWarning VARCHAR
         )'''
     )
     cur.execute(
@@ -90,7 +95,9 @@ def create_schema():
 
 def fill_data(json_file):
     with open(json_file) as data_file:
-        questions = json.load(data_file)
+        jsonData = json.load(data_file)
+        content = jsonData['content']
+        questions = content['questions']
         for question in questions:
             for q_text in question:
                 cur.execute(
@@ -132,9 +139,15 @@ def fill_data(json_file):
                             VALUES (%s, %s, %s, %s)
                         ''', (partei['antwort'],
                         partei['wahl'], q_id, party_id, ))
+
+        # add static data
+        cur.execute(
+           '''INSERT INTO statisch (thema, welcome, welcometxt, accenttitle, resultArticle, favoriteArticle, neutralWarning)
+                VALUES (%s, %s, %s, %s, %s, %s, %s)
+           ''', (content['thema'], content['welcome'], content['welcometxt'], content['accenttitle'], content['resultArticle'], content['favoriteArticle'], content['neutralWarning'], ))
+
         con.commit()
 
 create_schema()
 fill_data('data.json')
 cur.close()
-

@@ -18,7 +18,8 @@ def get_everything():
     alles = {}
 
     cursor.execute('''SELECT * FROM statisch ''')
-    alles['tenor'] = cursor.fetchall()
+    #alles['content_'] = cursor.fetchall()
+    content = cursor.fetchall()
 
     cursor.execute('''SELECT id, data FROM kategorie ''')
     kategories = cursor.fetchall()
@@ -31,7 +32,6 @@ def get_everything():
             'name': kategorie[1]
         }
 
-        print(k_dict[kategorie[0]])
         k_list.append(k_dict[kategorie[0]])
 
     alles['categories'] = k_list
@@ -47,7 +47,6 @@ def get_everything():
             'name': partie[1]
         }
 
-        print(p_dict[partie[0]])
         p_list.append(p_dict[partie[0]])
 
     alles['parties'] = p_list

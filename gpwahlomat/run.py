@@ -51,7 +51,6 @@ def auswahl():
 
 @app.route('/alles', methods=['GET'])
 def alles():
-    print(get_everything())
     return jsonify(get_everything())
 
 if __name__ == '__main__':

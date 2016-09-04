@@ -1,5 +1,30 @@
 [
   {
+    "content": [
+      {
+        "thema": "Thema der Befragung"
+      },
+      {
+        "welcome": "Willkommen"
+      },
+      {
+        "welcometxt": "Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher "
+      },
+      {
+        "accenttitle": "Betonungtitel"
+      },
+      {
+        "resultArticle": "Hier steht eine kurze Erklärung zum Ergebnis"
+      },
+      {
+        "favoriteArticle": "Hier steht eine kurze Erklärung zu den Favoriten"
+      },
+      {
+        "neutralWarning": "eine kurze Fehlermeldung weil der User zuviele Fragen mit Neutral beantwortet hat."
+      }
+    ]
+  },
+  {
     "Soll Berlin in der gemeinsamen Landesplanung auf einen Stopp der geplanten Tagebaue in Brandenburg hinarbeiten?": {
       "kategorie": "Energie & Klimawandel",
       "parteien": [

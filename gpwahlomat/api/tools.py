@@ -78,7 +78,7 @@ def get_questions():
         q_dict = {}
 
         # save question in q_dict
-        q_dict[question[0]] = {
+        q_dict = {
             'cat_id': question[1],
             'text' : question[2],
             'positions': []
@@ -89,7 +89,7 @@ def get_questions():
                 "SELECT antwort.data, antwort.partei_id, antwort.wahl FROM antwort WHERE antwort.frage_id = %s",[question[0]])
         positions = cursor.fetchall()
         for position in positions:
-            q_dict[question[0]]['positions'].append({
+            q_dict['positions'].append({
                 'orientation':position[1],
                 'vote': position[2],
                 'argumentation':position[0]})

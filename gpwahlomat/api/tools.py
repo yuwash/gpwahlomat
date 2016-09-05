@@ -18,8 +18,19 @@ def get_everything():
     alles = {}
 
     cursor.execute('''SELECT * FROM statisch ''')
-    #alles['content_'] = cursor.fetchall()
-    content = cursor.fetchall()
+    response = cursor.fetchall()
+    content = response[0]
+    static = {
+        'thema': content[0],
+        'welcome': content[1],
+        'welcometxt': content[2],
+        'accenttitle': content[3],
+        'resultArticle': content[4],
+        'favoriteArticle': content[5],
+        'neutralWarning': content[6]
+    }
+    alles['content_'] = static
+
 
     cursor.execute('''SELECT id, data FROM kategorie ''')
     kategories = cursor.fetchall()

@@ -9,8 +9,8 @@ from flask import Flask, request, render_template, jsonify
 from api.generic_api_handler import GenericAPIHandler
 from api.tools import get_everything
 
-
-app = Flask(__name__, template_folder='static/')
+# TODO remove static_url_path
+app = Flask(__name__, template_folder='static/', static_url_path='')
 
 
 @app.route('/')

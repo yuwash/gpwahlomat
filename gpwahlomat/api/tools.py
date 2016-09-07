@@ -27,7 +27,8 @@ def get_everything():
         'accenttitle': content[3],
         'resultArticle': content[4],
         'favoriteArticle': content[5],
-        'neutralWarning': content[6]
+        'neutralWarning': content[6],
+        'noteResultArticle': content[7]
     }
     alles['content_'] = static
 

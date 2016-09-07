@@ -78,7 +78,8 @@ def create_schema():
             accenttitle VARCHAR,
             resultArticle VARCHAR,
             favoriteArticle VARCHAR,
-            neutralWarning VARCHAR
+            neutralWarning VARCHAR,
+            noteResultArticle VARCHAR
         )'''
     )
     cur.execute(
@@ -142,9 +143,9 @@ def fill_data(json_file):
 
         # add static data
         cur.execute(
-           '''INSERT INTO statisch (thema, welcome, welcometxt, accenttitle, resultArticle, favoriteArticle, neutralWarning)
-                VALUES (%s, %s, %s, %s, %s, %s, %s)
-           ''', (content['thema'], content['welcome'], content['welcometxt'], content['accenttitle'], content['resultArticle'], content['favoriteArticle'], content['neutralWarning'], ))
+           '''INSERT INTO statisch (thema, welcome, welcometxt, accenttitle, resultArticle, favoriteArticle, neutralWarning, noteResultArticle)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+           ''', (content['thema'], content['welcome'], content['welcometxt'], content['accenttitle'], content['resultArticle'], content['favoriteArticle'], content['neutralWarning'], content['noteResultArticle'] ))
 
         con.commit()
 

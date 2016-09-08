@@ -5,7 +5,7 @@
     "welcometxt": "Umweltschutz versprechen alle Parteien im Berliner Abgeordnetenhaus. Wir haben Berliner Spitzenkandidat*innen gefragt, welche konkreten Ziele und Maßnahmen sie zur Umweltpolitik verfolgen. Die Fragen stammen aus dem Bereichen Energie & Klimawandel, Wirtschaft & Handel, Ernährung & Landwirtschaft und Verkehr & Mobilität. Mit unserem Wahl-O-Mat können sie selbst herausfinden welche Partei zu Ihnen passt.",
     "accenttitle": "",
     "resultArticle": "Mit diesen Parteien haben sie die größte Übereinstimmung.",
-    "favoriteArticle": "Hier Ihre Auswahl: grün = Zustimmung , orange = Ablehnung, blau = Neutral, grau = Übersprungen Durch Klicken auf den Stern können Sie bestimmte Fragen priorisieren.",
+    "favoriteArticle": "Hier Ihre Auswahl: blau = Zustimmung , orange = Ablehnung, grau = Neutral Durch Klicken auf den Stern können Sie bestimmte Fragen priorisieren.",
     "neutralWarning": "eine kurze Fehlermeldung weil der User zuviele Fragen mit Neutral beantwortet hat.",
     "noteResultArticle": "Selbstverständnis und Werte der AfD widersprechen den Grundwerten wie Freiheit, Toleranz, Gleichberechtigung und Gewaltlosigkeit, für die Greenpeace einsteht. Greenpeace lehnt es deshalb ab, die Forderungen der AfD im Detail zu bewerten.",
     "questions": [
@@ -69,6 +69,710 @@
               "name": "SPD",
               "antwort": "Aktuell besteht nach unseren Informationen keine Gefahr für das Berliner Trinkwasser. Die SPD legt jedoch Wert darauf, dass eine nachhaltige Sanierung vor Ort erfolgt, die auch künftig eine Gefährdung der Berliner Wasserversorgung durch Sulfate und andere Fremdstoffe ausschließt.",
               "wahl": 0
+            }
+          ]
+        }
+      },
+      {
+        "Befürworten Sie ein Abschalten des Braunkohlekraftwerks Klingenberg bis 2020 und der Berliner Steinkohlekraftwerke bis 2025?": {
+          "kategorie": "Energie & Klimawandel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Fossile Energieträger sind günstige und leistungsstarke Energiequellen. Sie werden noch einige Jahre die erforderliche Sicherheit garantieren, um die Umstellung auf erneuerbare Energien umsetzen zu können. Wir streben einen Ausstieg aus der Braunkohle bis zum Jahr 2020 und einen Ausstiegi aus der Steinkohle bis zum Jahr 2030 an.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir fordern, dass die bestehende Braun- und Steinkohleverstromung in Berlin an den Standorten Reuter C und Klingenberg spätestens im Jahr 2020 beendet wird sowie einen kompletten Ausstieg aus der Kohleverstromung und -wärmegewinnung in Berlini bis spätestens 2030.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja, zur Erreichung der Klimaschutzziele sind die Kohlekraftwerke Berlins schnellstmöglich stillzulegen, im Fall der Steinkohle nach Möglichkeit bis 2025, spätestens aber bis 2030. Um die Wärmeversorgung sicherzustellen sindi entsprechende Ersatzinvestitionen zu tätigen.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja. Die SPD setzt sich für einen schnellstmöglichen Ausstieg aus der Braun- und Steinkohleförderung und diesbezüglichen Kraftwerksnutzung ein.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Sind Sie für den Bezug von 100 % Ökostrom durch die öffentliche Hand bis 2020?": {
+          "kategorie": "Energie & Klimawandel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir unterstützen die Energiewende und wollen eine langfristig sichere, umweltverträgliche und bezahlbare Energieversorgung, die uns unabhängiger von fossilen Energieträgern macht. Allerdings können wir diesen Prozess vorerst nicht ohne die Mithilfe der fossilen Energieträger bewältigen.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir haben durch parlamentarische Initiativen erreicht, dass die Berliner Beschaffungsstellen größere Anteile von Ökostrom beziehen. Wir wollen die Mindestvorgaben von 20% verschärfen und den Bezug von Ökostrom durch ein starkes Klimastadtwerk signifikant erhöhen.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. Allerdings soll der Strombezug auch tatsächlich zum Ausbau Erneuerbarer Energien beitragen. Die Ausschreibung kann sich hierzu an den Empfehlungen des Umweltbundesamtes orientieren. Ein begrenzter Anteil von Strom aus gasbefeuerten, hocheffizienten KWK-Anlagen sollte möglich sein.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja. Wir setzen uns für eine deutliche Erhöhung des Anteils von Ökostrom in der öffentlichen Verwaltung ein, jedoch wird das Ziel eines 100-prozentigen Ökostrombezuges bis zum Jahr 2020 noch nicht zu erreichen sein.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Unterstützen Sie das Vorhaben, die Berliner Gebäude der öffentlichen Hand mit Photovoltaikanlagen auszustatten?": {
+          "kategorie": "Energie & Klimawandel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir wollen die energetische Sanierung von Gebäuden vorantreiben. Die öffentliche Hand muss mit gutem Beispiel voran gehen: Die Sanierung landeseigener Gebäude und die Versorgung mit Ökostrom sind dabei ein wichtiger Bestandteil.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja, das entspricht auch den von allen Parteien getragenen Empfehlungen der Enquete-Kommission „Neue Energie für Berlin“ - u.a. werden wir die entsprechenden Aktivitäten des Klimastadtwerks forcieren und die Umsetzung eines „Masterplans Solarhauptstadt“ unter- stützen.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. Das Land und die Bezirke sollten bei der Installation von Solaranlagen eine Vorreiterrolle einnehmen um endlich das Potential für Photovoltaik und Solarthermie in Berlin zu nutzen. Auf allen geeigneten öffentlichen Gebäuden sollen Solaranlagen installiert werden.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja, wir unterstützen das Ziel, die Berliner Gebäude der öffentlichen Hand mit Photovoltaikanlagen auszustatten.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Soll Berlin in der nächsten Legislaturperiode seine Klimaschutzstrategie an das 1,5-Grad-Ziel anpassen?": {
+          "kategorie": "Energie & Klimawandel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir können und müssen unsere CO2-Emissionen senken – mit dem kommenden Energiewendegesetz, dem dazu gehörenden Berliner Energie- und Klimaschutzprogramm und der Enquete-Kommission „Neue Energie für Berlin“ hat Berlin bereits ehrgeizige Ziele formuliert sowie die ersten notwendigen Schritte gemacht.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Oberstes Ziel ist die Erreichung von Klimaneutralität und die Umsetzung einer ambitionierten Energiewende in Berlin. Dies wird zusammen mit der Erweiterung des Berliner Energie- und Klimaschutzprogramms in der nächsten Legislatur ein Schwerpunkt unserer Arbeit sein.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "DIE LINKE will die Anpassung der Klimaschutzziele und der Strategie an das 1,5-Grad-Ziel von Paris. Sollen die Pariser Klimaziele erreicht werden, dürfen die Beschlüsse nicht nur eine Absichtserklärung bleiben, sondern müssen auch in Maßnahmen umgesetzt werden.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Die momentanen Bestrebungen für den Klimaschutz reichen nicht aus.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Die SPD setzt sich dafür ein, dass das Land Berlin zur „Divestment-Hauptstadt“ der Welt wird. Ziel soll sein, Anlagen aus Unternehmen, deren Geschäftsmodell dem Ziel der Klimaneutralität widersprechen, innerhalb der nächsten fünf Jahre abzuziehen und diese Investitionen in Zukunft durch Anlagerichtlinien auszuschließen.",
+              "wahl": 1
+            }
+          ]
+        }
+      },
+      {
+        "Sind Sie für einen verpflichtenden Ausbau von Erneuerbaren Energien für die Wärmeversorgung in Bestandsgebäuden?": {
+          "kategorie": "Energie & Klimawandel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Entscheidend für das Gelingen der Energiewende bei der Wärmeversorgung ist die energetische Sanierung des Gebäudebestandes. Auch in Berlin besteht weiterer Handlungsbedarf zur Erhöhung der Energieeffizienz im Gebäudebestand.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir werden für ein Wärmegesetz kämpfen, das klare Vorgaben für die Einsparung von Wärmeenergie im Gebäudebestand, den Ausbau erneuerbarer Wärme sowie die Regulierung der Fernwärmenetze macht. Dabei sind die besonderen sozialen Bedingungen Berlins zu berücksichtigen.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Wir sind für klare gesetzliche Vorgaben für den Ausbau Erneuerbarer Energien und für die Einsparung von Wärmeenergie im Berliner Gebäudebestand. Als Ersatzmaßnahme sollte die Erstellung qualifizierter Sanierungsfahrpläne angerechnet werden.",
+              "wahl": 1
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja. Die SPD verfolgt das Ziel, Berlin bis zum Jahr 2050 zu einer klimaneutralen Stadt zu entwickeln. Hierfür wurden bereits strategische Prinzipien und Handlungsfelder im Rahmen des Berliner Energie- und Klimaschutzprogramms erarbeitet.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Sind Sie für die Rekommunalisierung des Berliner Stromnetzes?": {
+          "kategorie": "Energie & Klimawandel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir vertreten die Position, dass vor einer möglichen Rekommunalisierungsentscheidung konkrete ökologische, wirtschaftliche, soziale und demokratiepolitische Ziele eindeutig zu definieren sind. Sowohl mit Blick auf den Kaufpreis, die Unternehmensstruktur als auch die Zielsetzung des Landes.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Dazu soll das Stromnetz vom Land Berlin zusammen mit der Genossenschaft BürgerEnergie Berlin übernommen werden. Wenn es im laufenden Verfahren oder nach möglichem Abbruch dazu in der neuen Legislaturperiode Spielräume gibt, werden wir diese nutzen.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. Während für private Netzbetreiber das Erzielen einer höchstmöglichen Rendite im Vordergrund steht, ermöglichen rekommunalisierte Energienetze die Ausrichtung der Geschäftspolitik an den energie-, wirtschafts-, sozial- und demokratiepolitischen Zielen des Landes.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Energie darf kein Luxus und Spekulationsobjekt sein. Wir wollen, dass die Berlinerinnen und Berliner Zugang zu sauberer, verlässlicher und bezahlbarer Energie haben. Nach den Wasserbetrieben wollen wir auch das Strom- und das Gasnetz sowie die Fernwärmenetze rekommunalisieren.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Soll sich Berlin öffentlich gegen TTIP und CETA positionieren?": {
+          "kategorie": "Wirtschaft & Handel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir vertreten die Position, dass vor einer möglichen Rekommunalisierungsentscheidung konkrete ökologische, wirtschaftliche, soziale und demokratiepolitische Ziele eindeutig zu definieren sind. Sowohl mit Blick auf den Kaufpreis, die Unternehmensstruktur als auch die Zielsetzung des Landes.",
+              "wahl": 0
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Wir wollen einen Welthandel, der fair ist und hohen sozialen und ökologischen Standards entspricht. Deshalb wollen wir TTIP, CETA und TISA stoppen und auf demokratischer und transparenter Grundlage neu verhandeln.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja, Berlin muss sich unbedingt gegen TTIP, CETA und TiSA positionieren. Privatisierungszwang der öffentlichen Daseinsvorsorge, Abbau von Rechten für Arbeitnehmer*innen und Verbraucher*innen sind für uns nicht hinnehmbar.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Die PIRATEN Berlin lehnen TTIP, TISA sowie CETA als intransparent, undemokratisch und auf die Interessen der multinationalen Konzerne zugeschnitten ab. TTIP und CETA bedrohen Daseinsvorsorge und Rekommunalisierung. Das Umgehen der Parla- mente hebelt die demokratischen Kontrollen aus.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Sind Sie für ein Verbot von Plastiktüten im Handel?": {
+          "kategorie": "Wirtschaft & Handel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Plastiktüten werden hierzulande zumeist über Recyclingsysteme umweltverträglich entsorgt. Sinnvoller als ein Verbot ist die freiwillige Selbstverpflichtung des Einzelhandels. Wir begrüßen, dass Einzelhändler zunehmend auf Plastiktüten verzichten.",
+              "wahl": 0
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Wir setzen auf Mehrwegbeutel. Da nach deutschem und europäischem Recht das Inverkehrbringen von Verpackungen nur unter engen Ausnahmen begrenzt oder besteuert werden kann, werden wir prüfen, welche rechtlichen Möglichkeiten Berlin besitzt.",
+              "wahl": 1
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja, wenn Maßnahmen wie eine Ressourcenabgabe auf Kunststoffe und eine Pfandpflicht für alle Kunststoffverpackungen, zu denen es problemlose Alternativen gibt, nicht greifen. Als ersten Schritt fordern wir ein Verbot der kostenlosen Abgabe von Plastiktüten.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Die Auswirkungen, die Plastiktüten über Mikroplastik verursachen, das erst nach ca. 600 Jahren verrottet und – insbesondere über die Meere – Lebensräume zerstört und Lebewesen tötet bzw. über die Nahrungskette den Weg zurück auf unsere Teller finden, müssen best- und schnellstmöglich minimiert werden.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja. Wir begrüßen die Initiative der Bundes- umweltministerin und des Handelsverbands Deutschland, die Zahl der Plastiktüten durch eine Gebühr des Einzelhandels auf die Ausgabe von Tüten, drastisch zu senken. Sowohl zum Schutz der Meere als auch zur Verbesserung des Gesundheitsschutzes ist dies dringend notwendig.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Sollen ökologische und soziale Standards bei der Beschaffung von Stoffen und Kleidung für den öffentlichen Dienst verpflichtend werden?": {
+          "kategorie": "Wirtschaft & Handel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Es ist richtig und wichtig, Nachhaltigkeitsaspekte bei der Beschaffung von Produkten für den öffentlichen Dienst zu beachten. In Berlin erfolgen Beschaffungen grundsätzlich entsprechend dem Berliner Ausschrei- bungs- und Vergabegesetz nach wirtschaft- lichen, sozialen und ökologischen Erwägungen.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir wollen Berlin zur Hauptstadt des fairen Handels machen. Dazu reformieren wir das Vergabegesetz, führen insbesondere die alte Wertgrenze wieder ein und stärken die Nachweis- und Kontrollpflicht, ergänzt durch eine regelmäßige Evaluation der Praxis.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja, allerdings auch für Beschaffungen generell. Das auch von der LINKEN eingeführte Ausschreibungs- und Vergabegesetz enthält bereits Regelungen zur ökologischen Beschaffung. Allerdings hat der Senat die Wertgrenzen erhöht und viele Ausnahmen formuliert. Dies muss künftig wieder anders werden.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja, durchaus. Neben der Funktionalität sollten auch ökologische und soziale Standards eine Rolle spielen.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Soll sich das Land Berlin für ein deutschlandweites Verbot von Glyphosat einsetzen?": {
+          "kategorie": "Wirtschaft & Handel",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Nein. Keine deutsche Bewertungsbehörde hat sich für ein Verbot von Glyphosat ausgesprochen. Dem ist auch die Europäische Behörde für Lebensmittel-sicherheit (EFSA) gefolgt, ebenso wie die Bewertungs-behörden der übrigen 28 Mitgliedstaaten.",
+              "wahl": 0
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir wollen Berlin pestizidfrei machen und setzen uns für ein bundes- und EU-weites Verbot von Glyphosat ein. Unsere AGH-Fraktion hat den Senat in dieser Legislatur mehrfach aufgefordert, auf den Einsatz von Pestiziden auf allen landeseigenen Flächen zu verzichten",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja, solange Zweifel bestehen, muss das Vorsorgeprinzip gelten und darf die Zulassung des laut IARC wahrscheinlich krebserregenden Glyphosat nicht verlängert werden. DIE LINKE fordert schon lange ein Verbot in der Vorerntebehandlung und auf privaten und kommunalen Flächen.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Über die Frage, ob und wie lange die Zulassung für das Pflanzenschutzmittel Glyphosat verlängert wird, entscheidet der Fachausschuss der EU-Kommission mit qualifizierter Mehrheit. Wir teilen die kritische Haltung vieler Experten hinsichtlich der gesundheitlichen Risiken von Glyphosat.",
+              "wahl": 1
+            }
+          ]
+        }
+      },
+      {
+        "Sollen in Berlin mehr Flächen für Urban Gardening ausgewiesen werden?": {
+          "kategorie": "Ernährung & Landwirtschaft",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Städtisches Grün ist unverzichtbar. Wir brauchen die Straßenbäume und –beete sowie Gärten und Parks nicht nur aus ökologischer oder ästhetischer Sicht. Sie haben auch einen hohen sozialen Wert. Jenseits der traditionellen Kleingartenstrukturen begrüßen wir weitere Formen des städtischen Gärtnerns in Berlin.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir wollen urbanes Gärtnern in der gesamten Stadt fördern und zusammen mit den Bezirken dafür weitere Flächen – auch als Zwischennutzung – ausweisen. Nach dem Vorbild anderer Städte wie New York und Stuttgart setzen wir eine*n Beauftragte*n für Urban Gardening ein.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. Wir wollen einen Stadtentwicklungsplan Grün aufstellen, der neben Urban Gardening auch Grün- und Parkanlagen, Grünzüge und Landschaftsparks, Wald, Schutzgebiete, Friedhöfe, Kleingärten und Straßen- bäume umfasst.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Auch in Zusammenarbeit mit sich für das Urban Gardening öffnenden Kleingartenkolonien. Hierfür befürworten wir die Einrichtung eines unabhängigen Urban-Gardening-Beauftragten.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja. Berlinerinnen und Berliner lieben das Grün in ihrer Stadt. Sie bringen sich durch ihr ehrenamtliches Engagement direkt vor Ort ein, um das Straßenbild vor ihrer Haustür zu verschönern. Wir unterstützen daher die Initiative des Urban Gardenings ausdrücklich.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Sind Sie dafür, dass öffentliche Einrichtungen, Kindertagesstätten und Schulen auf Produkte aus ökologischer und regionaler Erzeugung umstellen?": {
+          "kategorie": "Ernährung & Landwirtschaft",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir wollen, dass die Menschen sich im Alltag gesund ernähren können, und setzen uns dafür ein, dass in Kantinen ein gutes und vollwertiges Essen in hoher Qualität angeboten wird.Vorgaben für bestimmte Lebensmittel oder Produktionsverfahren werden wir nicht machen.",
+              "wahl": 0
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir wollen urbanes Gärtnern in der gesamten Stadt fördern und zusammen mit den Bezirken dafür weitere Flächen – auch als Zwischennutzung – ausweisen. Nach dem Vorbild anderer Städte wie New York und Stuttgart setzen wir eine*n Beauftragte*n für Urban Gardening ein.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. In Kindertagesstätten, Schulen, Kantinen, Mensen und beim Catering in öffentlichen Ein - richtungen wollen wir den Anteil der regionalen und ökologischen Lebensmittel steigern und den Anteil an Bio - Essen bis 2021 verdoppeln.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Ein gesundes und nachhaltiges Essensangebot muss mittelfristig flächendeckend angeboten werden.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Für eine gesunde Ernährung in Schulen und Kitas werden staatliche Zuschüsse und Elternbeiträge aufgewendet, die den Bezug von Produkten aus ökologischer Erzeugung ermöglichen.Wir werden auch künftig die Träger in ihrer Entscheidung unterstützen, die Verpflegung in ihren Einrichtungen umzustellen.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Soll es in öffentlichen Kantinen ein verpflichtendes veganes Angebot geben?": {
+          "kategorie": "Ernährung & Landwirtschaft",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Kantinen sollen gutes, vollwertiges Essen in hoher Qualität anbieten, d.h. auch vegetarische und vegane Gerichte. Dabei ist es sinnvoll, dass Kantinenbetreiber in den Dialog mit ihren Kunden über deren Wünsche treten und diese entsprechend berücksichtigen.",
+              "wahl": 0
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir setzen uns dafür ein, dass es in öffentlichen Kantinen täglich auch ein Angebot an veganen und vegetarischen Mahlzeiten gibt.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja – Nur ein veganes Angebot greift aber zu kurz. Verpflegung in öffentlichen Einrichtungen, wie in Kitas, Schulen, Krankenhäusern und Seniorenheimen, muss gesundheitliche (Unverträglichkeiten, Allergien) und kulturelle (Koscher, Halal) Anforderungen und Ernährungsstile berücksichtigen.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Entsprechende Anträge haben wir bereits in das Abgeordnetenhaus eingebracht. Diese wurden allerdings von der Koalition abgelehnt. Der Vegetarier*innen und Veganer*innen-Anteil in Berlin steigt zurecht, da diese Art der Ernährung einen großen Beitrag zum Klima- und Tierschutz bringen.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Wir begrüßen es, wenn sich das Angebot an öffentlichen Kantinen stärker an ökologischen Aspekten und der regionalen Produktion ausrichtet. Wir sind jedoch sehr skeptisch, was verpflichtende Vorgaben angeht. Kantinenbesucher schauen oftmals auf den Preis bzw. bleiben gewohnten Angeboten treu.",
+              "wahl": 0
+            }
+          ]
+        }
+      },
+      {
+        "Soll das Personal zur Kontrolle von Lebensmitteln in Berlin aufgestockt werden?": {
+          "kategorie": "Ernährung & Landwirtschaft",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir stehen für Transparenz und Null-Toleranz bei Lebensmitteln mit einer klaren Kennzeichnung. Das bedeutet auch, dass Hygieneverstöße und Grenzwert- überschreitungen veröffentlicht werden. Um ihre wichtigen Kontrollfunktionen wahrzunehmen, müssen die Behörden gut ausgestattet sein. Dafür setzen wir uns ein.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Noch wichtiger als mehr Personal für die Lebensmittelkontrollen ist uns deren Transparenz. Darum werden wir ein berlinweites Verbraucherschutz-Systems in Restaurants und Gaststätten nach dänischem Vorbild z.B. in Form eines Smileys einführen.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. Zur Gewährleistung gesetzlicher Vorgaben und der Lebensmittelsicherheit muss das Personal der Veterinär- und Lebensmittelaufsichtsämter in Berlin deutlich aufgestockt werden. Es braucht bessere Fortbildungen für die Fachkräfte und eine bessere technische Ausstattung.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja, grundsätzlich muss der Personalschlüssel in den Veterinär und Lebensmittelämtern der Bezirke erhöht werden, da diese teilweise nur 30-50% ihrer Pflichtaufgaben wahrnehmen können. Dieser Zustand ist unhaltbar.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja. Wir wollen eine effektivere Lebensmittel- kontrolle auch vor Ort. Wir werden bei den nächsten Haushaltsberatungen prüfen, ob und ggf. in welcher Höhe die Bezirke eine Erhöhung der Personalmittel zur Verstärkung der Veterinär- und Lebensmittelämter einsetzen werden.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Soll in öffentlichen Kantinen auf ein nachhaltiges Fischangebot umgestellt werden?": {
+          "kategorie": "Ernährung & Landwirtschaft",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Im Auftrag der Bundesregierung wurden Qualitätsstandards für die Gemeinschaftsverpflegung entwickelt. Diese wollen wir überall durchsetzen. Vorgaben für bestimmte Lebensmittel oder Produktionsverfahren werden wir aber nicht machen.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir werden uns dafür einsetzen, dass in öffentlichen Kantinen in erster Linie Fisch und Meeresfrüchte aus nachhaltiger Fischerei angeboten werden.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja – Fisch aus nachweislich nachhaltigem Fang sollte eine Selbstverständlichkeit in öffentlichen Kantinen sein. Das muss in den Ausschreibungen und Leistungsverzeichnissen vorgegeben werden.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Unseres Erachtens nach gibt es kein nachhaltiges Fischangebot. Am besten wäre es, für eine gewisse Zeit das Angebot an Fisch stark einzuschränken bzw. ganz darauf zu verzichten. Ansonsten: Ja.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Soll der Verkauf von Haiprodukten wie Schillerlocke und Haifischflossensuppe in Berlin verboten werden?": {
+          "kategorie": "Ernährung & Landwirtschaft",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir setzen uns nachdrücklich für eine nachhaltige Fischerei von Haien und einen verstärkten Schutz von gefährdeten Haiarten ein. Deshalb begrüßen wir insbesondere den EU-Haiaktionsplan sowie die EU- Finning-Verordnung ausdrücklich.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Da das Lebensmittelrecht in der konkurrierenden Gesetzgebungszuständigkeit des Bundes liegt und zudem von europarechtlichen Vorgaben bestimmt wird, werden wir prüfen, welchen Spielraum das Land Berlin für ein Verbot bestimmter Lebensmittelprodukte besitzt.",
+              "wahl": 0
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja – Auch das kann in den Ausschreibungen und Leistungsverzeichnissen vorgegeben werden. Viele Verbraucherinnen und Verbraucher wissen nicht, dass sie Hai-Produkte essen und kennen die quälerischen Fangmethoden nicht. Es braucht eine klare Lebensmittel- Kennzeichnung in Kantinen.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Am besten bundes- bzw. europaweit.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ein berlinweites Verbot von Haiprodukten würde angesichts des ohnehin sehr begrenzten regionalen Verzehrs nichts am Grundproblem ändern. Was wir brauchen, ist ein international gemeinsames Vorgehen gegen die Überfischung der Meere und das dadurch bedingte Aussterben bestimmter Fischarten.",
+              "wahl": 1
+            }
+          ]
+        }
+      },
+      {
+        "Unterstützen Sie die Forderung nach einer grundsätzlichen Höchstgeschwindigkeit von 30 km/h im Stadtgebiet?": {
+          "kategorie": "Mobilität & Verkehr",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Berlin braucht leistungsfähige Hauptverkehrs- straßen. Die Verkehre können nur bei Tempo 50 bedarfsgerecht und flüssig abgewickelt werden. Weitere Geschwindigkeitsbegrenzungen verursachen mehr Stop- and-go-Verkehre mit besonders hoher Schadstoff- belastung.",
+              "wahl": 0
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir unterstützen die Forderung nach einer stadtverträglichen Regelgeschwindigkeit Tempo 30, damit die Sicherheit im Verkehr steigt und Lärm sowie Abgase sich verringern.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja, diese Forderung unterstützen wir. Tempo 50 auf Hauptstraßen dort, wo es dem Verkehrsfluss nachweislich zuträglich ist und Lärmbelästigung eine untergeordnete Rolle spielt, soll als Ausnahme möglich bleiben. Auf Autobahnen innerstädtisch soll Tempo 80 gelten.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Tempo 30 ist ein wesentliches Instrument zur Erhöhung der Sicherheit von Kindern, Fußgängern und Fahrradfahrern. Die Verkehrsberuhigung lässt den Kiez auf den Straßen öffentlichen Raum für die Steigerung der Lebensqualität der Berlinerinnen und Berliner gewinnen.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Nein. Im Rahmen des Gesamtkonzepts zur Verkehrsvermeidung setzen wir auf den Rückbau von Durchgangsstraßen, Parkraumbewirtschaftung und die Ausweitung von Tempo 30-Zonen dort, wo die Belastung durch die Umlenkung des Durchgangsverkehrs auf die Stadtautobahn abnimmt.",
+              "wahl": 0
+            }
+          ]
+        }
+      },
+      {
+        "Sollen in Berlin mehr autofreie Zonen eingerichtet werden?": {
+          "kategorie": "Mobilität & Verkehr",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Schon heute ist die verkehrsberuhigte Zone ein geeignetes Mittel, um Fußgängern Priorität zu geben. Da, wo es sinnvoll ist, stehen wir der Prüfung einer Einrichtung von autofreien Zonen offen gegenüber.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir wünschen uns in Berlin mehr öffentliche Räume ohne Lärm und Abgase. Das können autofreie neue Wohngebiete sein, aber auch temporär oder dauerhaft umgenutzte Straßen. Kiezfeste und temporäre Spielstraßen sollen rechtlich erleichtert werden.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. Zur Änderung des Modal Split hin zu mehr Fußverkehr und im Sinne einer generationengerechten und lebenswerten Stadt unterstützen wir Initiativen zur Einrichtung von autofreien Abschnitten dort, wo sie von der Bewohner*innen-schaft mitgetragen werden.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. In einem Positionspapier haben wir uns für mehr Begegnungszonen ausgesprochen.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Ja. ÖPNV, Rad- und Fußverkehr, Taxen und Car- Sharing auf Basis regenerativer Energien bilden als Umweltbund den Kern des Mobilitätsnetzes. Auch der Autoverkehr ist weiterhin Teil des Mobilitätsangebots in der Stadt. Die Herausforderung besteht darin, die Mobilitätsarten intelligent miteinander zu kombinieren.",
+              "wahl": 2
+            }
+          ]
+        }
+      },
+      {
+        "Soll die A100 mit dem jetzigen Bauabschnitt 16 am Treptower Park enden?": {
+          "kategorie": "Mobilität & Verkehr",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Die A100 wollen wir weiterbauen, damit der Innovationsstandort Adlershof und der Flughafen BER besser angebunden und Wohngebiete von starkem Durchgangsverkehr entlastet werden. Dafür müssen keine Wohngebiete weichen, die Strecke verläuft überwiegend durch Gewerbegebiete.",
+              "wahl": 0
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja, denn die Verlängerung der A100 durch Friedrichshain bis zur Storkower Straße bedeutet Lärm, Abgase und eine verminderte Lebensqualität. Wir setzen uns daher dafür ein, dass die A100 mit dem jetzigen Bauabschnitt am Treptower Park endet.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. Wir wollen einen qualifizierten Abschluss am Treptower Park. Einen Weiterbau des 17. Bauabschnitt lehnen wir ab.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Besser aber noch wäre ein Rückbau, und eine Entsiegelung des jetzt schon fertig gestellten Abschnitts.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Nein. Die im Bundesverkehrswegeplan verankerte Verlängerung der Stadtautobahn A 100 ist für uns Teil eines Gesamtkonzepts zur Verkehrsentlastung der umlie- genden und innerstädtischen Quartiere, wo wir durch die Reduzierung von Verkehr, Lärm und Feinstaubbe- lastung mehr Lebensqualität schaffen wollen.",
+              "wahl": 0
+            }
+          ]
+        }
+      },
+      {
+        "Sind Sie für einen kostenfreien ÖPNV in der Berliner Innenstadt (Tarifbereich AB)": {
+          "kategorie": "Mobilität & Verkehr",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Die Landespolitik Berlins ist darauf ausgerichtet, dem ÖPNV die notwendigen Investitionen für den Erhalt und den Ausbau des ÖPNV zu ermöglichen. Wir wollen weiter einen leistungsgerechten, attraktiven öffentlichen Nahverkehr, der über den Landeshaushalt und die Fahrgeldeinnahmen jeweils kofinanziert wird.",
+              "wahl": 0
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Wir wollen die Fahrpreise senken und das ÖPNV- Angebot verbessern. Besonders wichtig ist für uns kurzfristig vor allem die Preissenkung des Sozialtickets. Darüber hinaus wollen wir unser Modell für ein solidarisch finanziertes Bürgerticket voranbringen.",
+              "wahl": 1
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Wir sind für einen solidarisch finanzierten Nahverkehr und haben dafür auch bereits einen Vorschlag in die öffentliche Debatte gebracht. Kostenfrei wird er aber nicht sein. Vielmehr sollen die Kosten auch durch die Nutznießer eines gut ausgebauten ÖPNV mitgetragen werden.",
+              "wahl": 1
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Wir sind die einzige Partei in Berlin, die den fahrscheinlosen ÖPNV ins Programm aufgenommen hat. Unsere Fraktion hat dazu bereits eine Machbarkeitsstudie vorgelegt und entsprechende Anträge ins Abgeordnetenhaus eingebracht.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Nein. Wir wollen den ÖPNV ausbauen, insbesondere das Straßenbahnnetz. Zudem wollen wir die Kosten des Sozialtickets an den im ALG-II-Regelsatz vorgesehenen Anteil für Mobilität angleichen. Einer Einführung eines kostenlosen ÖPNV stehen wir kritisch gegenüber.",
+              "wahl": 0
+            }
+          ]
+        }
+      },
+      {
+        "Unterstützen Sie den Gesetzentwurf, den der „Volksentscheid Fahrrad“ vorgelegt hat?": {
+          "kategorie": "Mobilität & Verkehr",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Wir wollen den Radverkehr fördern und verbesserte Bedingungen schaffen. Dabei ist uns wichtig, dass es einen fairen Mix und damit ein faires Miteinander aller Verkehrsteilnehmer gibt. Wir wollen nicht, dass verschiedene Mobilitätsarten gegeneinander aus- gespielt werden.",
+              "wahl": 1
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja, wir unterstützen den Volksentscheid aktiv; so haben wir an unserem Stand auf dem Umweltfestival und in den Bezirken Unterschriften gesammelt.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja. Die LINKE. Berlin hat sich zum Volksentscheid Fahrrad von Anfang an bekannt und unterstützt diesen aktiv. Die Infrastruktur hechelt dem positiven Trend zum Rad hinterher. Eine gute ausbebaute Radinfrastruktur ist im Interesse aller Verkehrsteilnehmenden.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja, und wir helfen dabei, die notwendigen Unterschriften für die nächste Stufe zu sammeln.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Auch wir wollen den Fahrradverkehr in der Stadt stärken. Dazu wollen wir einen Landesbetrieb Fahrrad gründen, der im Rahmen einer gesamtstädtischen Zielplanung den schnellen Ausbau der Radinfrastruktur vorantreibt und dabei vor allem Unfallschwer- punkte abbaut.",
+              "wahl": 1
+            }
+          ]
+        }
+      },
+      {
+        "Sollen die Investitionen in die Fahrradinfrastruktur in Berlin deutlich erhöht werden?": {
+          "kategorie": "Mobilität & Verkehr",
+          "parteien": [
+            {
+              "name": "CDU",
+              "antwort": "Die Förderung des Radverkehrs ist ein erklärtes Ziel der CDU Berlin. Wir wollen das Radwegenetz ausbauen und Fahrradschnellwege errichten. Außerdem wollen wir mehr öffentliche Fahrradabstellplätze und Fahrradparkhäuser. Das hilft allen Verkehrsteilnehmern.",
+              "wahl": 2
+            },
+            {
+              "name": "BÜNDNIS 90/DIE GRÜNEN",
+              "antwort": "Ja. Wir wollen die Mittel für den Radverkehr mindestens verdreifachen. Besonders wichtig ist uns der Ausbau eines Fahrradstraßen und -schnellwegenetzes, jährlich 100 km neue Radverkehrsanlagen, Verbesserung der Sicherheit an Kreuzungen und der Ausbau der Abstellanlagen.",
+              "wahl": 2
+            },
+            {
+              "name": "Die Linke",
+              "antwort": "Ja, die Investitionen sollen deutlich erhöht werden. In Kombination mit einer aufgabengerechten Personalausstattung im Land und den Bezirken für die erforderlichen Planungs- und Genehmigungsverfahren.",
+              "wahl": 2
+            },
+            {
+              "name": "Piraten",
+              "antwort": "Ja. Der Radverkehr bietet insgesamt die schnellste, gesündeste und ökologischste Fortbewegungsmöglichkeit in der Berliner Innenstadt.",
+              "wahl": 2
+            },
+            {
+              "name": "SPD",
+              "antwort": "Wir stehen für eine moderne Fahrradpolitik. Mehr als 1000 neue Radwege und Fahrradspuren wurden in Berlin angelegt und 27.000 Fahrradabstellanlagen geschaffen. Außerdem wollen wir die Infrastruktur für Leihfahrräder ausbauen und die Möglichkeit von Radschnellwegen in einer Studie prüfen.",
+              "wahl": 2
             }
           ]
         }

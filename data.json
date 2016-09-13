@@ -2,12 +2,12 @@
   "content": {
     "thema": "Wahl zum Abgeordnetenhaus 2016",
     "welcome": "Willkommen",
-    "welcometxt": "Umweltschutz versprechen alle Parteien im Berliner Abgeordnetenhaus. Wir haben Berliner Spitzenkandidat*innen gefragt, welche konkreten Ziele und Maßnahmen sie zur Umweltpolitik verfolgen. Die Fragen stammen aus dem Bereichen Energie & Klimawandel, Wirtschaft & Handel, Ernährung & Landwirtschaft und Verkehr & Mobilität. Mit unserem Wahl-O-Mat können sie selbst herausfinden welche Partei zu Ihnen passt.",
+    "welcometxt": "Umweltschutz versprechen alle Parteien im Berliner Abgeordnetenhaus. Wir haben Berliner Spitzenkandidat*innen gefragt, welche konkreten Ziele und Maßnahmen sie zur Umweltpolitik verfolgen. Die Fragen stammen aus dem Bereichen Energie & Klimawandel, Wirtschaft & Handel, Ernährung & Landwirtschaft und Verkehr & Mobilität. Mit unserem Wahl-O-Mat können sie selbst herausfinden, welche Partei zu Ihnen passt.",
     "accenttitle": "",
     "resultArticle": "Mit diesen Parteien haben sie die größte Übereinstimmung.",
     "favoriteArticle": "Hier Ihre Auswahl: blau = Zustimmung , orange = Ablehnung, grau = Neutral Durch Klicken auf den Stern können Sie bestimmte Fragen priorisieren.",
     "neutralWarning": "eine kurze Fehlermeldung weil der User zuviele Fragen mit Neutral beantwortet hat.",
-    "noteResultArticle": "Greenpeace  hat  die  Positionen  und  Inhalte  der  Partei Alternative für Deutschland“ analysiert. Umweltpolitisch vertritt die AfD zahlreiche Forderungen, die Greenpeace ablehnt, insbesondere ihre Forderungen gegen die Energiewende, gegen Klimapolitik, für längere Laufzeiten von Atomkraftwerken und für die Nutzung von Kohle. Viel wichtiger aber ist, dass die AfD eine rechtspopulistische Partei mit rechtsradikalen Tendenzen ist. Selbstverständnis und Werte der AfD widersprechen den Grundwerten wie Freiheit, Toleranz, Gleichberechtigung und Gewaltlosigkeit, für die Greenpeace einsteht. Greenpeace lehnt es deshalb ab, die Forderungen der AfD im Detail zu bewerten. ",
+    "noteResultArticle": "Greenpeace  hat  die  Positionen  und  Inhalte  der  Partei \"Alternative für Deutschland\" analysiert. Umweltpolitisch vertritt die AfD zahlreiche Forderungen, die Greenpeace ablehnt, insbesondere ihre Forderungen gegen die Energiewende, gegen Klimapolitik, für längere Laufzeiten von Atomkraftwerken und für die Nutzung von Kohle. Viel wichtiger aber ist, dass die AfD eine rechtspopulistische Partei mit rechtsradikalen Tendenzen ist. Selbstverständnis und Werte der AfD widersprechen den Grundwerten wie Freiheit, Toleranz, Gleichberechtigung und Gewaltlosigkeit, für die Greenpeace einsteht. Greenpeace lehnt es deshalb ab, die Forderungen der AfD im Detail zu bewerten. ",
     "questions": [
       {
         "Soll Berlin in der gemeinsamen Landesplanung auf einen Stopp der geplanten Tagebaue in Brandenburg hinarbeiten?": {
@@ -106,7 +106,7 @@
         }
       },
       {
-        "Sind Sie für den Bezug von 100 % Ökostrom durch die öffentliche Hand bis 2020?": {
+        "Sind Sie für den Bezug von 100% Ökostrom durch die öffentliche Hand bis 2020?": {
           "kategorie": "Energie & Klimawandel",
           "parteien": [
             {
@@ -682,7 +682,7 @@
         }
       },
       {
-        "Sind Sie für einen kostenfreien ÖPNV in der Berliner Innenstadt (Tarifbereich AB)": {
+        "Sind Sie für einen kostenfreien ÖPNV in der Berliner Innenstadt (Tarifbereich AB)?": {
           "kategorie": "Mobilität & Verkehr",
           "parteien": [
             {

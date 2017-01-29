@@ -23,6 +23,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+.ropeproject
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -63,9 +64,10 @@ db_repository/
 
 # virtualenv
 venv/
+/ve
 
 $ config stuff
 *.cfg
 
 # misc
-/ve
+*.swp

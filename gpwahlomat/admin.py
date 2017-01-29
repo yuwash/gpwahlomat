@@ -1,57 +1,58 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# File name: run.py
+# File name: admin.py
 '''
 Main file that gets run and handles the routing to index and api calls
 '''
-from flask import Flask, request, render_template, jsonify
-
+from flask import Flask, request, render_template
+from flask_login import login_required
 from api.generic_api_handler import GenericAPIHandler
-from api.tools import get_everything
 
 # TODO remove static_url_path
 app = Flask(__name__, template_folder='static/', static_url_path='')
 
 
+@login_required
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    return render_template('admin.html')
 
 
+@login_required
 @app.route('/kategorie', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def kategorie():
     _handler = GenericAPIHandler()
     return _handler.__getattribute__(request.method.lower())()
 
 
+@login_required
 @app.route('/partei', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def partei():
     _handler = GenericAPIHandler()
     return _handler.__getattribute__(request.method.lower())()
 
 
+@login_required
 @app.route('/antwort', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def antwort():
     _handler = GenericAPIHandler()
     return _handler.__getattribute__(request.method.lower())()
 
 
+@login_required
 @app.route('/frage', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def frage():
     _handler = GenericAPIHandler()
     return _handler.__getattribute__(request.method.lower())()
 
 
+@login_required
 @app.route('/auswahl', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def auswahl():
     _handler = GenericAPIHandler()
     return _handler.__getattribute__(request.method.lower())()
 
 
-@app.route('/alles', methods=['GET'])
-def alles():
-    return jsonify(get_everything())
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)

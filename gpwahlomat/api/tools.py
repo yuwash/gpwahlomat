@@ -4,21 +4,46 @@
 '''
 A collection of tools used in other modules
 '''
-from db.db_client import database_connection
 
-db = database_connection()
-cursor = db.cursor()
+
+class DBQuestionsData(object):
+    def __init__(self):
+        from db.db_client import database_connection
+
+        db = database_connection()
+        self.cursor = db.cursor()
+
+    def get_response(self):
+        self.cursor.execute('''SELECT * FROM statisch ''')
+        return self.cursor.fetchall()
+
+    def get_kategories(self):
+        self.cursor.execute('''SELECT id, data FROM kategorie ''')
+        return self.cursor.fetchall()
+
+    def get_parties(self):
+        self.cursor.execute('''SELECT id, data FROM partei ''')
+        return self.cursor.fetchall()
+
+    def get_questions(self):
+        self.cursor.execute(
+            "SELECT frage.id, frage.kategorie_id, frage.data FROM frage")
+        return self.cursor.fetchall()
+
+    def get_positions(self):
+        self.cursor.execute(
+                "SELECT antwort.data, antwort.partei_id, antwort.wahl FROM antwort WHERE antwort.frage_id = %s",[question[0]])
+        return self.cursor.fetchall()
 
 
 def flatten(_list):
     return [item for sublist in _list for item in sublist]
 
 
-def get_everything():
+def get_everything(questions_data):
     alles = {}
 
-    cursor.execute('''SELECT * FROM statisch ''')
-    response = cursor.fetchall()
+    response = questions_data.get_response()
     content = response[0]
     static = {
         'thema': content[0],
@@ -32,9 +57,7 @@ def get_everything():
     }
     alles['content_'] = static
 
-
-    cursor.execute('''SELECT id, data FROM kategorie ''')
-    kategories = cursor.fetchall()
+    kategories = questions_data.get_kategories()
     k_list = []
 
     for kategorie in kategories:
@@ -48,8 +71,7 @@ def get_everything():
 
     alles['categories'] = k_list
 
-    cursor.execute('''SELECT id, data FROM partei ''')
-    parties = cursor.fetchall()
+    parties = questions_data.get_parties()
     p_list = []
 
     for partie in parties:
@@ -63,17 +85,14 @@ def get_everything():
 
     alles['parties'] = p_list
 
-    alles['questions'] = get_questions()
+    alles['questions'] = get_questions(questions_data)
     return alles
 
 
-def get_questions():
+def get_questions(questions_data):
     q_list = []
 
-    cursor.execute(
-        "SELECT frage.id, frage.kategorie_id, frage.data FROM frage")
-    questions = cursor.fetchall()
-
+    questions = questions_data.get_questions(questions_data)
 
     for question in questions:
         q_dict = {}
@@ -86,9 +105,7 @@ def get_questions():
         }
 
         # add positions to question
-        cursor.execute(
-                "SELECT antwort.data, antwort.partei_id, antwort.wahl FROM antwort WHERE antwort.frage_id = %s",[question[0]])
-        positions = cursor.fetchall()
+        positions = questions_data.get_positions()
         for position in positions:
             q_dict['positions'].append({
                 'orientation':position[1],

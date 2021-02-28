@@ -6,10 +6,15 @@ Main file that gets run and handles the routing to index and api calls
 '''
 from flask import Flask, request, render_template
 from flask_login import login_required
-from api.generic_api_handler import GenericAPIHandler
+from api.generic_api_handler import GenericAPIHandler, DBAPIData
 
 # TODO remove static_url_path
 app = Flask(__name__, template_folder='static/', static_url_path='')
+
+
+def _create_api_handler():
+    api_data = DBAPIData()
+    return GenericAPIHandler(api_data)
 
 
 @login_required
@@ -22,35 +27,35 @@ def index():
 @login_required
 @app.route('/kategorie', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def kategorie():
-    _handler = GenericAPIHandler()
+    _handler = _create_api_handler()
     return _handler.__getattribute__(request.method.lower())()
 
 
 @login_required
 @app.route('/partei', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def partei():
-    _handler = GenericAPIHandler()
+    _handler = _create_api_handler()
     return _handler.__getattribute__(request.method.lower())()
 
 
 @login_required
 @app.route('/antwort', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def antwort():
-    _handler = GenericAPIHandler()
+    _handler = _create_api_handler()
     return _handler.__getattribute__(request.method.lower())()
 
 
 @login_required
 @app.route('/frage', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def frage():
-    _handler = GenericAPIHandler()
+    _handler = _create_api_handler()
     return _handler.__getattribute__(request.method.lower())()
 
 
 @login_required
 @app.route('/auswahl', methods=['GET', 'PUT', 'POST', 'DELETE'])
 def auswahl():
-    _handler = GenericAPIHandler()
+    _handler = _create_api_handler()
     return _handler.__getattribute__(request.method.lower())()
 
 

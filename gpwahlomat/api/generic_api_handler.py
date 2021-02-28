@@ -12,6 +12,16 @@ This is instanciated every time a request to one of the api routes is made.
 from flask import jsonify, request
 
 
+class FileAPIData(object):
+    def __init__(self, data_file):
+        import json
+
+        self.jsonData = json.load(data_file)
+
+    # TODO-ish: implement those methods from DBAPIData;
+    #  Might not be necessary anyway
+
+
 class DBAPIData(object):
     def __init__(self):
         from db.db_client import database_connection

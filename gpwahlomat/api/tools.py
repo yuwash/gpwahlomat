@@ -6,6 +6,16 @@ A collection of tools used in other modules
 '''
 
 
+class FileQuestionsData(object):
+    def __init__(self, data_file):
+        import json
+
+        self.jsonData = json.load(data_file)
+
+    # TODO-ish: implement those methods from DBQuestionsData;
+    #  Might not be necessary anyway
+
+
 class DBQuestionsData(object):
     def __init__(self):
         from db.db_client import database_connection
